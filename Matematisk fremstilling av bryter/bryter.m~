@@ -25,7 +25,7 @@ pf=cos(atan(((2*Pi*50*L_l)/R_l)));
 C=(w^2*R_l*L_l^2)/(R_l+w^2*L_l^2);
 
 %Her definerer vi tidsrommet til bryteren:
-t=0:0.00001:0.03;
+t=0:0.00001:0.05;
 
 %Søker så initsial verdiene for å bestemme K, K er spenningen U_l rett etter brudd.
 %Antar at i=0 ved brudd

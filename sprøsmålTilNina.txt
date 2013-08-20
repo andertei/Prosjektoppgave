@@ -2,4 +2,14 @@ Hva betyr 0.3 bar upstream pressure?
 
 	Hva innebærer det at trykket er mindre enn 1, suger den inn luft? Upstream menes det da at luften strømmer fra jord på elektroden?
 
+Kan lysbuespenningen neglisjeres for denne oppgaven? Hvordan blir matematikken om vi ikke kan neglisjere lysbuespenningen?
 
+Hvor lang tid bruker bryteren fra full kontakt til åpen?
+
+Hva betyr TRV? Kan det bety transient recovery voltage? Hva er i så fall det?
+
+Bestemmelse av initsialverdier:
+Bestemmelse load side:
+	Kan jeg anta at vi ikke får strømklipping og dermed brudd i i=0?
+Bestemmelse supply side:
+	kan jeg anta at kondensatoren kan neglisjeres under normal drift. Vil i så fall spenningen være forskjøvet med 90g/ pi/2 i forhold til strømmen.
