@@ -6,7 +6,16 @@ Kan lysbuespenningen neglisjeres for denne oppgaven? Hvordan blir matematikken o
 
 Hvor lang tid bruker bryteren fra full kontakt til åpen?
 
-Hva betyr TRV? Kan det bety transient recovery voltage? Hva er i så fall det?
+Hva betyr TRV? Kan det bety transient recovery voltage? Hva er i så fall det? Ja det er nok det det betyr.
+
+Spørsmål til konklusjon:
+	hvorfor kan ikke bryteren være designet slik at første CZ kommer etter strømmens nullgjennomgang og ikke bare andre? Er det fordi lysbuen skal varme opp teflonen slik at kvelningsgass blir skapt?
+
+Hva skjer om dysen ikke har en rett sylindrisk falte, men heller en med rifling eller rette riller for å øke overfalten dens? Hvordan vil dette innvirke på luftstrømmen?
+
+Betyr cold gas flow at man tester uten at bryteren er spenningssatt og at det genereres en lysbue? Hvordan kan disse resultatene være representative, det må da skje en enorm ekspansjon av gassen når den varmes opp av lysbuen?
+
+Kan du hjelpe meg med å printe i denne etasjen?
 
 Bestemmelse av initsialverdier:
 Bestemmelse load side:

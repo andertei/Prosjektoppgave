@@ -6,7 +6,7 @@ Kan lysbuespenningen neglisjeres for denne oppgaven? Hvordan blir matematikken o
 
 Hvor lang tid bruker bryteren fra full kontakt til åpen?
 
-Hva betyr TRV? Kan det bety transient recovery voltage? Hva er i så fall det?
+Hva betyr TRV? Kan det bety transient recovery voltage? Hva er i så fall det? Ja det er nok det det betyr.
 
 Spørsmål til konklusjon:
 	hvorfor kan ikke bryteren være designet slik at første CZ kommer etter strømmens nullgjennomgang og ikke bare andre? Er det fordi lysbuen skal varme opp teflonen slik at kvelningsgass blir skapt?
