@@ -15,6 +15,8 @@ Hva skjer om dysen ikke har en rett sylindrisk falte, men heller en med rifling 
 
 Betyr cold gas flow at man tester uten at bryteren er spenningssatt og at det genereres en lysbue? Hvordan kan disse resultatene være representative, det må da skje en enorm ekspansjon av gassen når den varmes opp av lysbuen?
 
+Kan du hjelpe meg med å printe i denne etasjen?
+
 Bestemmelse av initsialverdier:
 Bestemmelse load side:
 	Kan jeg anta at vi ikke får strømklipping og dermed brudd i i=0?
