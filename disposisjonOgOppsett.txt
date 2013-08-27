@@ -1,0 +1,28 @@
+Her kommer en liten liste over hvordan jeg har lyst til å disponere oppgaven min.
+
+-Forside
+
+-Sammendrag
+
+-Innholdsfortegnelse
+
+-Innledning
+	I dette kapittelet skal det trekkes inn:
+		Tidligere forsøk og resultater gjerne hva som har ledet opp til der vi er nå. Her vil Ninas rapport være sentral.
+			Presanter gjerne resultatene i to grafiske modeller, den ene som sirkel-trekant rød - blå og den andre som prosent velykket brytning opp mot trykk. Dette er nyttig.
+-Teori
+	Her må jeg finne relevant teori for oppgaven og ikke bare fjatte i vei som det ofte blir på teoribiter. 
+		kanskje: Nullgjennomgang og elektrodehastighet
+			Se på kopper-wolfram og forklare lysbue-kontakt og main-contact
+			transient recovery voltage og hva endring i denne innebærer
+			hvilke to gjenntenningsmekanismer vi har og hvilke kriterier som er aktuelle. vi ser bare på termisk; hvorfor det?
+
+-Gjennomføring av forsøk? <-- Skal denne være med?
+	Her må jeg også trekke noen hypoteser og kritiske spørsmål til hva jeg og Nina skal se etter. Det er klart at det her vil bli noen spørsmål som er intressange. Nina hjelper meg sikkert med dette. Kanskje det blir mulighet for å teste noen egen geometri?
+
+-Resultater presanter resultater
+
+-Diskusjon 
+
+-Konklusjon? <-- dette må vel være med, men vi gjør jo bare "trend forskning"		
+
