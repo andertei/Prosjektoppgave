@@ -14,5 +14,8 @@ Termal reignition is cuased by thermal instability in the electric arc. The temp
 
 If a thermal re-ignition is avoided a dielectric re-ingition may occure. As the recovery voltage increeses after the first CZ. If the dielectric strengt of the medium is to low, and the recovery voltage is to high a new flash over may happen. The main factor in determinating if a dielectric re-ignition can occure is the amplitude of the recovery voltage.
 
+Recovery voltage
+When breaking an inductiv load in combitantion with stray capasitance the current will quickly go down, but will have some high frequeny transients. This transients may reach values nearly as high as 2 p.u. and cause a re-ignition. 
+
 
 
