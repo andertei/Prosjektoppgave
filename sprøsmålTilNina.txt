@@ -25,3 +25,5 @@ Bestemmelse supply side:
 
 
 Kartlegges recovery voltage (tilbakefjæringsspenningen??, hva heter egentlig dette på norsk?) ved brudd, slik at vi kan kartlegge stigningstallet dens? Det er kanskje ikke så interssant, siden vi kun ser på gjenntenning.
+
+Hva slags type last tester vi? Kun induktiv?
