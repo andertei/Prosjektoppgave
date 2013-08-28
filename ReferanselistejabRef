@@ -1,0 +1,28 @@
+% This file was created with JabRef 2.7b.
+% Encoding: UTF-8
+
+@UNPUBLISHED{ErikJonsson,
+  author = {Erik Jonsson, Nina Sasaki Aanensen and Magne Runde},
+  title = {Curent Interruption in Air for a Medium Voltage Load Break Switch},
+  owner = {anders},
+  timestamp = {2013.08.28}
+}
+
+@ARTICLE{Jonsson2013,
+  author = {Erik Jonsson and Magne Runde},
+  title = {Medium Voltage Laboratory for Load Break Switch Development},
+  journal = {International Conference on Power Systems},
+  year = {2013},
+  pages = {6},
+  owner = {anders},
+  timestamp = {2013.08.28}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
