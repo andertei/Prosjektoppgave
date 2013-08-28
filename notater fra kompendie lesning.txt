@@ -17,5 +17,11 @@ If a thermal re-ignition is avoided a dielectric re-ingition may occure. As the 
 Recovery voltage
 When breaking an inductiv load in combitantion with stray capasitance the current will quickly go down, but will have some high frequeny transients. This transients may reach values nearly as high as 2 p.u. and cause a re-ignition. 
 
+Switchear requirements
+1. when closed, it must be almost an perfect conductor
+2. when open, it must be a perfect insulator
+3. when closed, it must be at any time able to interrupt ant current that may occur, without generating unacceptably large overvoltages
+4. when open, it must be at any time able to close the contact whitout welding them together, even if a short circiut condition is present. 
+
 
 
