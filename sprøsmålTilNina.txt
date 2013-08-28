@@ -22,3 +22,6 @@ Bestemmelse load side:
 	Kan jeg anta at vi ikke får strømklipping og dermed brudd i i=0?
 Bestemmelse supply side:
 	kan jeg anta at kondensatoren kan neglisjeres under normal drift. Vil i så fall spenningen være forskjøvet med 90g/ pi/2 i forhold til strømmen.
+
+
+Kartlegges recovery voltage (tilbakefjæringsspenningen??, hva heter egentlig dette på norsk?) ved brudd, slik at vi kan kartlegge stigningstallet dens? Det er kanskje ikke så interssant, siden vi kun ser på gjenntenning.

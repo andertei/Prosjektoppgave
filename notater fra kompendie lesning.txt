@@ -10,7 +10,9 @@ The goal is to quench the arc at current zero, if not a phenomen called current 
 
 If another inition occurres it is either an re-ignition(gjenntenning, mangler god oversettelse) or a re-strike (gjenntenning, Restriking voltage er gjenntenningsspenning). A re-ignition happens immediatly ater CZ, an re-strike is defined to occur a quater of a power cycle or more after CZ. Re-ingnitions are devided in two categories: thermal and dielectric.
 
-Termal reignition is cuased by thermal instability in the electric arc. The temperature in the contact gap is closely correlated to the amplitude of the current. The termal reignition occures immediately after CZ and is greatly dependent on the recovery voltage shape, esoacuakky its steepness, during this period. 
+Termal reignition is cuased by thermal instability in the electric arc. The temperature in the contact gap is closely correlated to the amplitude of the current. The termal reignition occures immediately after CZ and is greatly dependent on the recovery voltage shape, espessially its steepness, during this period.
+
+If a thermal re-ignition is avoided a dielectric re-ingition may occure. As the recovery voltage increeses after the first CZ. If the dielectric strengt of the medium is to low, and the recovery voltage is to high a new flash over may happen. The main factor in determinating if a dielectric re-ignition can occure is the amplitude of the recovery voltage.
 
 
 
