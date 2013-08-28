@@ -1,0 +1,16 @@
+Phenomenologigical desciption of current interruption
+
+When the contacts or electrods in a switch moves form closed to open position and arc will normaly form. The arc consist of plasma, whitch is a mixture of electrons, neutral particels and ions, both positive and negativ. The temperature of the plasma is very high due to the energy dissipated in the arc by the huge current flow.
+
+The resistance of the plasma is low, and there for the arcing voltage can often be regarded as zero compared to the system voltages. More follows:
+
+The conductivity of an arc is strongly dependent on temperature. When the temerature is high (several thousand degrees) the large consentration of electrons and ions makes it a good conductor. Therefore one of the most common ways to quence an arc is to cool it down. Then the arc will go tough several polarisation mechanisms and the conductivity will decrease.
+
+The goal is to quench the arc at current zero, if not a phenomen called current chopping will occure. Of the current is quenched at CZ an voltage will build up across the open contacts. This is called the recovery voltage. The amplitude and steepness of the recovere voltage determinate the chance for another ignition.
+
+If another inition occurres it is either an re-ignition(gjenntenning, mangler god oversettelse) or a re-strike (gjenntenning, Restriking voltage er gjenntenningsspenning). A re-ignition happens immediatly ater CZ, an re-strike is defined to occur a quater of a power cycle or more after CZ. Re-ingnitions are devided in two categories: thermal and dielectric.
+
+Termal reignition is cuased by thermal instability in the electric arc. The temperature in the contact gap is closely correlated to the amplitude of the current. The termal reignition occures immediately after CZ and is greatly dependent on the recovery voltage shape, esoacuakky its steepness, during this period. 
+
+
+
