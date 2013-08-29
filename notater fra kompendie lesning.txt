@@ -24,4 +24,5 @@ Switchear requirements
 4. when open, it must be at any time able to close the contact whitout welding them together, even if a short circiut condition is present. 
 
 
+Stress on an switch. Maybe this chapter should fokus on typical stresses on an LBS?
 
