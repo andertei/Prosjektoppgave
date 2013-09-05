@@ -13,6 +13,10 @@ Vi ønsker derfor:
 
 Brytningsmediets egenskaper ved lysbue rett før strømmens nullgjennomgang:
 
+Vi ønsker nå at lysbuen skal ha lav lysbuespenning slik at den får lave tap og liten energi utvikling. Altså at temperaturen ikke øker. Den skal fortsatt lede godt, slik at vi ikke kan oppleve strømklipping.
+
+MEN i denne fasen er det viktig at vi klarer å kjøle lysbuen ned raskt nok slik at temperaturen og ionene rekker og rekombineres raskt nok til at vi ikke får gjenntenning rett etter nullgjennomgang. 
+
 Brytningsmediets egenskaper etter nullgjennomgang:
 
 
