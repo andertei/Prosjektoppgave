@@ -1,0 +1,18 @@
+Generelt om brytningsmediets ideelle egenskaper:
+
+Brytningsmediets egenskaper ved lysbue start:
+
+Brytningsmediets egenskaper ved lysbue normal:
+
+	Minimere energi tapet i lysbuen. --> Dette fører til mindre varmeutvikling i omgivelsene rundt lysbuen og lysbuen holder seg varm. Energi tapet i lysbuen er direkte knyttet til lysbuespenningen. Lysbuespenningen kan holdes lav ved at brytningsmediet har en lav ioniserings energi, altså at det dannes ledende ioner lett ved de temperaturene som kan oppstå i lysbuen. Det kan også være andre faktorer som utgjør om lysbuen består av ledende partikler som blant annet tyngden til ionene, elektroner er MYE lettere enn ioniserte atomer blant annet.
+
+Vi ønsker derfor:
+	LAV TERMISK LEDEEVNE (Dette gjør at lysbuen holder på sin egen energi fremfor å gi den ut til omgivelsene.)
+	LAV IONISERINGS ENERGI (Dette gjør at det raskt dannes ledende ioner)
+
+
+Brytningsmediets egenskaper ved lysbue rett før strømmens nullgjennomgang:
+
+Brytningsmediets egenskaper etter nullgjennomgang:
+
+
