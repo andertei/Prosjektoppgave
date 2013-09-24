@@ -18,6 +18,10 @@
 \tableofcontents
 \newpage
 \section{Introduction}
+A load break switch should be able to interrupt currents less or equal the maximum load current in a distribution system. When interrupting a current the two contact which a switch consists of start separating producing a gap between each other. Normally the current is not interrupted by this and an electrical arc ignites and burns in the contact gap \cite{bib:HVEbreak}. The arc consists of plasma, which is a mixture of negativ and positive ions as well as electrons. Due to the energy dissipation produced by the arc the temperature in the plasma is very high. The electrical conductivity of the plasma channel is dependent of the temperature produced by the arc. When a high current is flowing it is almost a perfect conductor, but at low temperatures the conductivity is much poorer.
+
+A AC-current have a natural zero crossing, as the current approaches this point the arc will start cooling and extinguish if properly cooled at this point of the power cycle. The principle of a switchgear is to cool the arc sufficiently when the current approaches zero and then quench the arc when the current is zero. At this moment the current is interrupted and a voltage builds up across the open contacts. This voltage is called the recovery voltage. The steepness and amplitude of the recovery voltage \cite{bib:HVEbreak} and the design of the switchgear will decide if an new arc ignites between the contacts after the current zero. If an arc ignites the interruption have failed.
+
 Upon till now SF$_6$ and vacuum based technology have been dominating the compact medium-voltage switchgear market. Air insulated switchgear does exists but they are space consuming and are not applicable for use in a compact substation design. A compact substation is one of the most common designs for substations in the medium-voltage level of the distribution system. Figure \ref{fig:compact substation} displays a compact substation which can be used in the medium-voltage distribution system. As figure \ref{fig:compact substation} displays there is a limited amount of space available for the switchgear. Therefore the main challenge for a air insulated switchgear design for this kind of application is set by the amount of space available in the compact substation. 
 
 \begin{figure} [h]
@@ -26,7 +30,20 @@ Upon till now SF$_6$ and vacuum based technology have been dominating the compac
 \caption{Compact substation with open front panel} \label{fig:compact substation}
 \end{figure}
 
+The main choice of interrupting media in switchgear has been SF$_6$ since its discovery in the 1970ies. The gas exhibits many properties which is well suited for an isolation gas. It is highly electron negative which gives it good dielectric strength and arc-interrupting capabilities. The breakdown voltage of SF$_6$ is almost three times higher than air at atmospheric pressure \cite{bib:SF6PI}. It has excellent heat transfer properties as an interrupting medium \cite{bib:SF6PI}. The gas also reforms itself when dissociated under the high temperature conditions in an electrical arc. SF$_6$ produces no polymerization, carbon or other conductive deposits during arcing. It is also chemically compatible with most insulation materials and conductive materials \cite{bib:SF6PI}. The gas is also well suited for use in low temperature environments since its boiling point is fairly low even at high pressures. The gas in its stable form is nontoxic, nonflammable and nonexplosive. It is also thermally stable and do not decompose at normal operating temperatures for a closed switch \cite{bib:SF6PI}. SF$_6$ based switchgear tends to be cheap to produce relative to other designs, and the gas itself is also affordable at today prices.
+
+SF$_6$ have some disadvantages, when exposed to electrical discharge or arcing it forms highly toxic and corrosive compounds \cite{bib:SF6PI}. It is also hard to remove nonpolar contaminants like air and its breakdown voltage is sensitive to water vapour and conductive particles. However it biggest downside is probably that it is an effective infrared absorber. This makes it a strong greenhouse gas \cite{bib:SF6PI} and it is regarded to be almost $20000$ times as potent as CO$_2$.
+
+Klimakur2020 states that:"BLA BLA BLA SF6 SKAL UT"
+
+\newpage
+
+\begin{thebibliography}{10}
 
 
-The main choice of interrupting media in switchgear has been SF$_6$ since its discovery in the 1970ies. The production costs of the switchgear is low and the gas is cheap. The gas also have a good dielectric strength, when compared to air it is approximately three times stronger. It has also good thermal conductivity for interrupting currents. The stable form of the gas is not poisonous to humans and it is also not reactive. This means that the gas will not react with other parts of the switchgear and damage it over time. However SF$_6$ have one disadvantaged which have made it less interesting lately. SF$_6$ has $20000$ the greenhouse gas potential as CO$_2$. Due to the development of awareness about the potential threat of global warming phasing out SF$_6$ based equipment where possible is expected to be of interest, both for the government and from many of the larger companies. Klimakur2020 states that:"BLA BLA BLA SF6 SKAL UT"
+\bibitem{bib:HVEbreak} \textit{M. Runde}, \textit{Current Interruption in Power Grids}. Trondheim: Norwegian University of Science and Technology, 2013, p. 1-2 - 1-6
+
+\bibitem{bib:SF6PI} \textit{L.G. Christophorou, J. K. Olthoff, and R.J. Van Brunt}, "\textit{Sulfur Hexafluoride and the Electric Power Industry}", \textit{IEEE Electrical Insulation Magazine, vol. 13, No. 5, pp. 20-24}, Oct. 1997.
+
+\end{thebibliography}
 \end{document}
