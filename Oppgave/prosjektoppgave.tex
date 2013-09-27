@@ -48,6 +48,33 @@ Several different nozzle geometries are going to be tested and it is assumed tha
 \section{Theory}
 \subsection{Switchgear design}
 \subsubsection{General design}
+Switchgear can be divided into four main categories:
+\begin{itemize}
+\item Disconnector switch
+\item Load Break Switch
+\item Circuit Switch
+\item Earthing Switch
+\end{itemize}
+This report will focus on the load break switch (LBS) design. A LBS is a switchgear design to be able to interrupt currents with magnitude that is equal or less than the rated maximum continuous current in the power system. A LBS must fulfil the following demands to meet the requirements of the area of application:
+
+\begin{itemize}
+\item When closed:
+	\begin{itemize}
+		\item It must act as an perfect conductor.
+		\item Be capable to interrupt any currents that may arise, without generating too high over-voltages. 
+	\end{itemize}
+\item When open:
+	\begin{itemize}
+		\item It must be an perfect isolator.
+		\item be able to close without welding the contacts together, event under short-circuit conditions.
+	\end{itemize}
+\end{itemize}
+
+
+A switchgear will need to contain two sets of contacts to meet the requirements above. This is done by having one set of main contacts and one set of arcing contacts. These sets have different behaviour and roles when breaking a current and are connected in parallel. In a LBS the main contacts primary function is to assure that the switch in closed position acts as a perfect conductor with as little as possible contact resistance. Copper  or aluminium is often as material in the main contact. Sometimes the contact surface is plated with tin, gold, silver or platinum to ensure a low contact resistance between the main contacts. This contact is the first contact to open and the last one to close. This is to ensure that an arc do not start to burn between the contact. This is of great importance because the materials a main contact is made out of is usually not very heat resistant and might get damaged by the arc.
+
+The other set of contact is the arcing contact. The arcing contact is the last contact to open, and the first one to close. Therefore this contact will need to withstand the harsh conditions that happens when an arc burns between them. The contact points need to withstand high temperatures, arc erosion, welding and other stresses that may apply when closing or opening an energized contact. Aluminium and copper is not fit for this tasks since they will melt or erode from stresses of an arc. It is common to use composites of metals with good electrical conduction with heat resistant oxides. The problem with this kinds of composites is that the have a considerable resistance. Without the main contact in parallel with the arcing contact, the losses and the heat generation in the switchgear would be to large and might damage the arcing contact over time.
+
 \subsubsection{Test switch}
 A new medium voltage laboratory for load break switch development have been designed with the possibilities to vary important design parameters for a load break switch. When the industry develops switchgear technology they tend to alter several different parameters at the same time. For instance, if they wish to alter the speed of the airflow in a puffer LBS, they might increases the separation speed of the contacts, since these functions often are linked in a puffer design. This will also result in a higher pressure not only and not only a higher volumetric flow. This will make it hard to conclude which parameter that was the most critical for a successful interruption. Therefore a laboratory switch have been design where each of the different parameters can be adjusted without changing other critical parameter. This will make systematic researching possible and optimisation of certain designs criteria, like dimensions, will be a lot simpler.
 
