@@ -92,9 +92,14 @@ The next stage of the interruption sequence is shown in figure \ref{fig:CircutBr
 
 The gas flow is partly dependent on the cross-section of the arc, which again is dependent on the current amplitude. A large current may block the hole in the nozzle preventing a flow of gas. This is called current clogging and may occur for certain nozzle designs at high current interruptions. In such an event the pressure in the gas reservoir will increase further due to compression from mechanical moment of the arcing contact and thermal expansion in the gas because of heating from the arc. When the current amplitude approaches zero its cross-section will decrease and the clogging effect will end. This will result in a powerful gas blast onto the arc, as shown in figure \ref{fig:CircutBreakPuff1}d. For smaller current amplitudes the arc cross-section is smaller and a blocking effect do not occur in the same extent. This generates a less intense gas flow, preventing current chopping. 
 
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.4]{Bilder/Theory/selfBlast.png}
+\caption{Expulsion chamber in a breaker using the self-blast mechanism \cite{bib:CBAC}} \label{fig:selfBlast}
+\end{figure}
 
+The self-blast, or third generation breaker was developed with the goal of reducing mechanical power of the operating system, making it cheaper and less complex. Figure \ref{fig:selfBlast} shows the working principle of a breaker using self-blast to interrupt an arc. The difference between self-blast and puffer mechanism is that the puffer mechanism increases the pressure by reducing the volume. Rather than the self-blast design which have a constant volume relying on a raise in temperature to increase the gas pressure \cite{bib:CBAC}. The self-blast design uses the heat generated from an arc burning between the arcing contacts to interrupt the current. The gas expands as it is heated by the arc, this increase in pressure leads to a gas flow on the arc, which cools it down leading to the quenching of the arc.
 
-The self-blast bla bla. Dette bør nevnes, men det er mange ulemper knyttet til denne i forhold til puffer, som nok gjør at den ikke er like godt egnet til brytin av luft. 
 
 
 
@@ -147,5 +152,7 @@ SF$_6$ is an effective infrared absorber and have a long lifetime in the atmosph
 \bibitem{bib:CIAMVLBS} \textit{E. Jonsson, N. S. Aanensen and M. Runde}, "\textit{Current Interruption in Air for a Medium Voltage Load Break Switch}", \textit{IEEE Trans. Power Delivery}, to be published.
 
 \bibitem{bib:KlimaKur2020} "\textit{KLIMAKUR2020}", Oslo: Klima- og forurensningsdirektoratet, 2010, p. 197
+
+\bibitem{bib:CBAC} \textit{W. Rieder}, "\textit{Circuit breakers, Physical and engineering problems, III-Arc-medium considerations}", \textit{IEEE spectrum, pp. 80-84}, Sept. 1970.
 \end{thebibliography}
 \end{document}
