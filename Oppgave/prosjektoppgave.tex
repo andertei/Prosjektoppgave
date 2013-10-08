@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
+
 \author{Anders Dall'Osso Teigset}
 \title{PUFFER MECHANISM SKRIV I STORE BOKSTAVER}
 
@@ -47,7 +48,7 @@ Several different nozzle geometries are going to be tested and it is assumed tha
 \newpage
 \section{Theory}
 \subsection{Switchgear design}
-\subsubsection{General design}
+\subsubsection{General design} \label{sec:genDes}
 Switchgear can be divided into four main categories:
 \begin{itemize}
 \item Disconnector Switch
@@ -136,11 +137,15 @@ It is expected that b2 and c2 will need a higher pressure than b1 and c1 to perf
 \subsubsection{Phenomenological description of a typical current interruption} \label{sec:InterruptCurrent}
 A interrupting sequence in an AC power system have a typical pattern it follows. Under normal service the contacts are closed and current is flowing through the switchgear without electrical losses. Then a command signal to interrupt the current is sent to the breakers driving mechanism. The contacts is set to motion and a gap filled with an interrupting medium appears between them. An arc usually forms between the contacts and the current continues to flow trough the breaker. An electrical arc consists of plasma which is composed of electrons and other charge carriers like positive and negative ions. Due to energy dissipation in the arc the temperature of the plasma is generally quite high, but it is strongly dependent on the electrical current flow \cite{bib:HVEbreak}. In an AC power system the electrical current flow is mainly dependent on the sinus curve of the power cycle. Plasma with an high temperature tends to have a higher electric conductivity than plasma with an lower temperature. Electrical conductivity in an plasma channel is also strongly depend on the medium the plasma is burning in, the difference between air and SF${_6}$ will be discussed in section \ref{seq:airandsf}.
 
+The arcing voltage, which is defined as the voltage drop over arc is dependent on the temperature and the cross-section of the arc \cite{bib:HVEbreak}, since these are depending on the current the arcing voltage can be regarded as constant. When the current approaches its zero crossing (CZ) the energy dissipation in the arc decreases and the plasma cools down. With different cooling mechanisms as mention in section \ref{sec:genDes} the breaker cools down the arc. If done sufficient the electric conductivity of interrupting medium becomes low, and it behaves as an isolator. This will quench the arc as the current amplitude reaches zero.
+
+The moment after the arc have been quenched a voltage builds up over the contacts, this is called the recovery voltage \cite{bib:HVEbreak}. If a successful interruption is to occur, a re-ignition of the arc must be avoided as the recovery voltage increases. The probability of an re-ignition is set by the steepness and amplitude of the recovery voltage \cite{bib:HVEbreak}. There is two different kinds of re-ignition; it is the thermal and the dielectric re-ignition. The thermal re-ignition take place right after CZ and is mainly dependent on the recovery voltages steepness. As the recovery voltage rises and a thermal re-ignition is avoided a dielectric re-ignition may occur. This kind of re-ignition is largely dependent on the amplitude of the recovery voltage.
 
 \subsubsection{Ionisation processes}
 \subsubsection{Temperature profile for an electrical arc}
 
 \subsubsection{The difference between air and SF$_6$ as interrupting medium} \label{seq:airandsf}
+hva sskjer med ledeevnen naar den nearmer seg null, er hoey eller stigende? Dette maa diskuteres.
 \newpage
 \subsection{Environmental impacts of SF$_6$ from electrical power industries}
 SF$_6$ is an effective infrared absorber and have a long lifetime in the atmosphere. This makes it a strong greenhouse gas. Because of the increase in commercial use since the 1970s the production of the gas have steadily increased. This have resulted in a rise of the SF$_6$ concentration in the atmosphere from barely measurable quantities in the 1980s \cite{bib:SF6PI} to sett inn nytt tall her!
