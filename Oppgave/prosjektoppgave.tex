@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{float}
 
 %symbolliste
 
@@ -159,27 +160,52 @@ u_{recovery}=u_{left}-u_{right} \cite{bib:HVEbreak}
 
 Where $u_{left}$ is the voltage on the left hand side of the breaker and $u_{right}$ is the voltage on the right hand side.
 
-\subsubsection{Electric arcs} \label{sec:elarcs}
-%\subsubsection{Temperature profile for an electrical arc} Dette kan komme innenfor dette kap. Her skal det også skrives litt om ionisasjon. jeps jeps.
+\subsubsection{Voltage drop in a static electric arc} \label{sec:elarcs}
+
 Plasma is generated when gas or metal vapour is heated to very high temperatures, at a certain point the molecules in the gas decomposes to ions and free electrons. This mixture is called plasma, and makes up most of the components in an electrical arc \cite{bib:HVEbreak}. The following section describe the properties of an arc burning in atmospheric pressure or above. Arcs in vacuum behaves different, and will not be featured in this report.
 
 When working with arcs it is common to differentiate between dynamic and static arcs. The static arc is established during switching operations in a DC power system after the transient phenomenas have faded out. An dynamic arc is an arc that occurs in AC power systems and during the transient part of a DC interruption, or when the cooling of the arc varies with time, like in most puffer designs. Even though all arcs in an AC system is to be regarded as dynamic arcs, it is possible to regard them as static during a short period of time \cite{bib:HVEbreak}.
 
-Figure \ref{fig:staticArcChar} displays the static arc characteristic for an arc burning in a gas filled gap. The figure is only valid for pressure levels equal or above atmospheric pressure. The static arc characteristic gives a relation between the arcing voltage and the electrical current flowing in the gap. The values on the axis is only approximations and varies with the gas type and contact material. The length of the gap is also an important factor the arcing voltage. 
+Figure \ref{fig:staticArcChar} displays the static arc characteristic for an arc burning in a gas filled gap. The figure is only valid for pressure levels equal or above atmospheric pressure. The static arc characteristic gives a relation between the arcing voltage and the electrical current flowing in the gap. The values on the axis is only approximations and varies with the gas type and contact material. The length of the gap is also an important factor the magnitude of the arcing voltage. 
 
-\begin{figure} [h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=1]{Bilder/Theory/staticArcChar.png}
-\caption{Static arc characteristic  \cite{bib:HVEbreak}} \label{fig:staticArcChar}
+\caption{Static arc characteristic  \cite{bib:HVEbreak}.} \label{fig:staticArcChar}
 \end{figure}
 
-At low currents the arcing voltage is high, but decreases rapidly with increasing currents. For higher currents the voltage drop is approximately constant, until the current reaches a certain level and the arcing voltage starts to increase. The difference between air and SF$_6$ as an interrupting medium will be discussed further in section \ref{sec:airandsf}, but on a general basis it is possible to conclude that SF${_6}$ have a lower arcing voltage. This implies that the energy dissipation in air will be higher, especially when breaking smaller currents which is common for an LBS.
+At low currents the arcing voltage is high, but decreases rapidly with increasing currents. For higher currents the voltage drop is approximately constant, until the current reaches a certain level and the arcing voltage starts to increase. The difference between air and SF$_6$ as an interrupting medium will be discussed further in section \ref{sec:airandsf}, but on a general basis it is likely to assume that SF${_6}$ have a lower arcing voltage if compared to air for a certain breaking operation. This implies that the energy dissipation in air will be higher, especially when breaking smaller currents where the arcing voltage difference is greatest. This is highly relevant for an LBS since most of the switching duties occurs at smaller currents.
+
+An static electrical arc might be regarded as divided into three regions \cite{bib:HVEbreak}.
+\begin{description}
+\item[Chatode region] The voltage drop, $V_c$, is usually around 20 V.
+\item[Arc column]	There is a constant electric field in this region, typical 10 V/cm.
+\item[Anode region] The voltage drop, $V_a$, is usually around 3 V.
+\end{description}
+
+This relationship is illustrated in figure \ref{fig:potDisArc}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Bilder/Theory/potentialDistArc.png}
+\caption{Cross-section of a stationary arc and the corresponding potential distribution \cite{bib:HVEbreak}.} \label{fig:potDisArc}
+\end{figure}
+
+For short arcs the voltage drop will mostly occur close to the cathode, and some what at the anode. In longer arcs more of the voltage drop will occur in the arc column itself.
+
+\subsubsection{Electrical conductivity in an arc}
+What is the first ionisation mechanism that occurs in air. What is the secound. And What ionisation mechanism occur in SF6.
+
+Ionisation, Thermal, collision, generation at cathode, formation of negative ions 
+Dissiciation and recombintaion
+
+\subsubsection{Heat transport in an arc}
+%\subsubsection{Temperature profile for an electrical arc} Dette kan komme innenfor dette kap. Her skal det også skrives litt om ionisasjon. jeps jeps.
 
 \subsubsection{The difference between air and SF$_6$ as interrupting medium} \label{sec:airandsf}
 hva sskjer med ledeevnen naar den nearmer seg null, er hoey eller stigende? Dette maa diskuteres.
+There is a curve located 4-13 ionisation occurs at the sudden changes. Compare to a similar for SF6.
 
-
-Statisk lysbue karakteristikk: Luft vill ha noe hoyere lysbue spenning, spesielt for lavere strømnivaaer. Men dette er en veldig generel sluttning. Det vil avhengige av mange faktorer, som kjoling, dissosiering, elektrodemetaller. Dessuten er dette en statisk betraktning og ikke direkte overforbar til dynamiske sitvasjoner som ac brytning er.
+Statisk lysbue karakteristikk: Luft vill ha noe hoyere lysbue spenning, spesielt for lavere strømnivaaer. Men dette er en veldig generel sluttning. Det vil avhengige av mange faktorer, som kjoling, dissosiering, elektrodemetaller. Dessuten er dette en statisk betraktning og ikke direkte overforbar til dynamiske sitvasjoner som ac brytning er. Det er ikke nødvendigvis slik at en høyere lysbue spenning resulterer i mer energi avgitt til omgivelsene i form av varme. Det kan like gjerne resultere i at bare plasma kanalen blir varm, dette er avhengig av de termiske egenskapene til luft og SF6 som re en viktig sammenligning og det er her SF6 har en virkelig fortrinn.
 
 \newpage
 \subsection{Environmental impacts of SF$_6$ from electrical power industries}
