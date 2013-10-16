@@ -192,7 +192,7 @@ This relationship is illustrated in figure \ref{fig:potDisArc}.
 
 For short arcs the voltage drop will mostly occur close to the cathode, and some what at the anode. In longer arcs more of the voltage drop will occur in the arc column itself.
 
-\subsubsection{Electrical conductivity in an arc}
+\subsubsection{Electrical conductivity in an arc} \label{sec:eleCondArc}
 Gasses have the ability to be perfect isolators as well as good conductors, mainly depending on the gas temperature. This is due to charged particles and electrons created by dissociation of the molecules in the gas. Air is a mixture of several gasses but might be simplified to consist mostly of nitrogen (N$_2$). In figure \ref{fig:condAir} the conductivity of air can be observed.   
 
 \begin{figure}[H]
@@ -250,10 +250,33 @@ F & 17.4 &  \\
 
 %Noe av dette egner seg kanskje bedre som disusjon
 In figure \ref{fig:condSF6} the electrical conductivity of SF$_6$ as a function of temperature is presented. If the conductivity of air and SF$_6$ is compared it is possible to observe several similarities in the conductivity when compared to different temperatures. At high temperatures, when both gases are fully ionized, the conductivity is high, almost in the same range as metals. The transaction between the isolating and the conducting stage is quick. If the particle density of the two gases is taken in to account it is possible to observe that the decomposition of SF$_6$ occurs at a lower temperature than nitrogen. This can indicate that the transaction form isolation to conducting take place a bit faster for SF$_6$ than air. In a LBS this might slightly influence the interruption capabilities, but it is not the conductivity that is the main difference and challenge between SF$_6$ or air as an interrupting medium are. Both SF$_6$ and air have fairly good electrical conductivity profiles for interrupting currents.
-
-However when the current amplitude approaches zero and the gases recombines, SF$_6$ have one major advantage that air do not possess. Decomposed SF$_6$ consists of a high concentration of ionized fluorine, both F$^{+}$ and F$^{++}$. These particles are considered to be highly oxidative, which means that they will attract electrons. In the moment right after CZ there are a lot of free electrons in the gap between the contact plates. It is essential to remove these quick to avoid thermal re-ignition of the electrical arc. In an SF$_6$ based switchgear many of these free electrons are absorbed by the ionized fluorine. In air oxygen have this effect, but the concentration of ionized oxygen is far lower than fluorine. This is one of the reasons that thermal re-ignition is a larger problem for an air based compact LBS and not so huge in a SF$_6$ based system.   
+%Noe av dette egner seg kanskje bedre som disusjon
+However when the current amplitude approaches zero and the gases recombines, SF$_6$ have one major advantage that air do not possess. Decomposed SF$_6$ consists of a high concentration of ionized fluorine, both F$^{+}$ and F$^{++}$. These particles are considered to be highly oxidative, which means that they will attract electrons. In the moment right after CZ there are a lot of free electrons in the gap between the contact plates. It is essential to remove these quick to avoid thermal re-ignition of the electrical arc. In an SF$_6$ based switchgear many of these free electrons are absorbed by the ionized fluorine. In air oxygen have this effect, but the concentration of ionized oxygen is far lower than fluorine. This is one of the reasons that thermal re-ignition is a larger problem for an air based compact LBS and not so huge in a SF$_6$ based system.
+   
 \subsubsection{Heat transport in an arc}
+There are several different conductive mechanisms in an electrical arc. The effects of these mechanisms vary with temperature, and therefore the heat transport in the arc is strongly dependent upon the temperature. In figure \ref{fig:tempConGas} several common interrupting gases thermal heat conductivity is compared to each other as a function of temperature.
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Bilder/Theory/thermalCond.png}
+\caption{Thermal conductivity as a function of temperature \cite{bib:HVEbreak}.} \label{fig:tempConGas}
+\end{figure}
+
+As illustrated in figure \ref{fig:tempConGas} the thermal conductivity of air differ quite much from the one SF$_6$ has. Due to the nature of different stages in current interruption it is desired to use a gas that have a thermal conductivity that suites the different stages right. 
+
+When the current amplitude is rising or is high it is preferred that the thermal conductivity is low. This means that the plasma channel do not heat its surrounding but mainly keep the dissipated energy stored in it self. This will result in a temperature rise in the plasma channel, and a relatively small increase in the surroundings. As explained in section \ref{sec:eleCondArc} a high arc temperature will result in high conductivity in the arc, which gives a low arcing voltage. If the thermal conductivity is high in this region, heating of the surrounding system will occur this should be avoided for several reasons.
+\begin{description}
+\item[Dissociation of extra interrupting medium:] This might result in a slower transaction between the electrical conductive and isolation stage. Resulting in a bigger chance of re-ignition.
+\item[Expansion of gas:] When the gas surrounding the arc is heated it will expand and contributing to an increase in pressure inside the switchgear. This will add to the size of the switchgear.
+\item[Higher temperature on the arcing contacts:] The arcing point at the contact plates will be hotter, resulting in more damage and shorter lifetime. It will also result in more metal to vaporise from the contacts which contributes to an increase in charge carriers in the gas gap and might add to the chance of re-ignition. 
+\end{description}
+
+At the moment right before CZ it is an advantage that the thermal conductivity of the gas is high. This will result in a fast cool-down time of the plasma channel since both the current amplitude is decreasing and the energy stored in the arc now is permitted out in the surroundings. Since the time span is much smaller for this part of the interruption many of the negative effect of a high thermal conductivity can be neglected. A gas with high thermal conductivity in this stage of the interruption process will be able to recombine from a ionized and highly conductive state to a isolator fast, making it harder for a thermal re-ignition to occur. This is because of the quick cooling of the plasma channel. In gases where the thermal conductivity low the cooling mechanisms is of great importance. Since a quick recombination of ionized gas do not occur in the same manner as when the medium is quickly cooled. The removal of charge carriers must be done differently, this is described in detail in section \ref{sec:genDes}.
+
+VIDERE: SKRIVE LITT OM TEMP PROFIL I EN LYSBUE. VISE AT DET MESTE AV TEMPERATUR LIGGER LAGRET I MIDTEN AV BUEN. SAA FERDIG?
+
+%Dette hører kanskje til i diskusjon?
+For the temperature ranges that can be expected in a typical LBS during the high current stage of the interrupting process air has a fairly high thermal conductivity while SF$_6$ has a low. Giving SF$_6$ a clear advantage over air. The most critical part in an interruption is how the interruption medium behaves the moment right before CZ. It is in the temperature range that occurs in this stage of the interruption the biggest challenge with using air as an interruption medium applies. DETTE HORER DEFFINITIFT TIL I DISKUSJON
 
 \subsubsection{The difference between air and SF$_6$ as interrupting medium} \label{sec:airandsf}
 hva sskjer med ledeevnen naar den nearmer seg null, er hoey eller stigende? Dette maa diskuteres.
@@ -261,9 +284,22 @@ There is a curve located 4-13 ionisation occurs at the sudden changes. Compare t
 
 Statisk lysbue karakteristikk: Luft vill ha noe hoyere lysbue spenning, spesielt for lavere strømnivaaer. Men dette er en veldig generel sluttning. Det vil avhengige av mange faktorer, som kjoling, dissosiering, elektrodemetaller. Dessuten er dette en statisk betraktning og ikke direkte overforbar til dynamiske sitvasjoner som ac brytning er. Det er ikke nødvendigvis slik at en høyere lysbue spenning resulterer i mer energi avgitt til omgivelsene i form av varme. Det kan like gjerne resultere i at bare plasma kanalen blir varm, dette er avhengig av de termiske egenskapene til luft og SF6 som re en viktig sammenligning og det er her SF6 har en virkelig fortrinn.
 
+DETTE UNDERKAP SKAL NOK INN I DISKUSJON
+
 \newpage
 \subsection{Environmental impacts of SF$_6$ from electrical power industries}
+SKRIV DETTE KAP. SAA DISKUSJON.
 SF$_6$ is an effective infrared absorber and have a long lifetime in the atmosphere. This makes it a strong greenhouse gas. Because of the increase in commercial use since the 1970s the production of the gas have steadily increased. This have resulted in a rise of the SF$_6$ concentration in the atmosphere from barely measurable quantities in the 1980s \cite{bib:SF6PI} to sett inn nytt tall her!
+\newpage
+
+
+\section{Results}
+
+\newpage
+
+\section{Discussion}
+\subsubsection{The difference between air and SF$_6$ as interrupting medium} \label{sec:airandsf} %kanskje dette avsnittet her?
+
 \newpage
 
 \begin{thebibliography}{10}
