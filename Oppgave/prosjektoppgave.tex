@@ -383,8 +383,20 @@ When the current amplitude is rising or is high the temperature in the plasma ch
 
 Even though the difference in thermal conductivity at high temperatures is a challenge when dealing with air instead of SF$_6$, it is the difference between the heat transport properties at lower temperatures that are the most challenging. At the moment right before CZ it as an advantage that the thermal conductivity of the gas is high. Since the current amplitude is low and falling, and the energy in the plasma channel is transferred out to the surroundings fast, the temperature will drop fast. The speed of the temperature drop will depend on the temperature of the surroundings and the thermal conductivity of the gas. The moment the arc extinguish and the current is zero is is crucial that the ionized gas recombines. The speed of the recombination is mainly dependent on the temperature of the gas. Since SF${_6}$ have a high thermal conductivity for temperatures that will occur around CZ the gas will cool down quickly and recombine fast. Air will however use much longer time than SF${_6}$ to cool down and recombine, due to its low thermal conductivity at this stage in the interruption process. This means that in the moment right after CZ there will be a lot of ionized air particles between the contact plates, but in an SF${_6}$ based breaker the gas will mostly have recombined. This property will result in a higher chance of thermal re-ignition in an air based breaker, and set stronger demands to the cooling mechanism.
 
-\subsubsection*{Dielectric} %kanskje slå sammen med kap. nedenfor
-\subsubsection*{Electron negativity}
+\subsubsection*{Dielectric properties} %kanskje slå sammen med kap. nedenfor
+Even though this research project is mainly focused on thermal re-strikes in a LBS a few things should be mention about the difference in dielectric properties between SF${_6}$ and air. Figure \ref{fig:breakDownVoltage} indicates the different break down voltages for SF$_6$ and air for a gas filled gap at 1 mm with a homogeneous electrical field. As the figure points out SF$_6$ has a much higher break down strength than air, approximately three times higher, but this depends on the pressure. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{Bilder/Theory/emissionsSF6Norway.png}
+\caption{Breakdown voltage at certain pressure levels of different gases in a homogeneous field with a gap space equal 1 mm  \cite{bib:TET4160HVIM}.} \label{fig:breakDownVoltage}
+\end{figure}
+
+The huge difference in break down voltage is mainly due to the high electron negative properties of SF$_6$. A electron negative gas are complex molecular structure mostly consisting at atoms from the halogen group in the periodic system, usually chlorine or fluorine \cite{bib:TET4160HVIM}. These atoms can easily capture free electrons because they lack one electron in the outer shell, when capturing a electron they become negatively charged ions. Therefore it is possible to conclude that in an electron negative gas the concentration of free electrons will be low, but due to ionisation of the gas the density of negative ions will be lager. However the weight of the negatively charge gas molecules makes them less mobile than the much lighter free electrons. This makes the impact on break down voltage from free electrons much higher than the impact from ionized molecules.
+
+\subsubsection*{Chemical properties}
+-contaminants in SF6 like water, makes flouine acid.
+-cold temperatures makes droplets and towphase.
 \subsubsection*{Environment}
 
 \newpage
@@ -416,6 +428,9 @@ Even though the difference in thermal conductivity at high temperatures is a cha
 \bibitem{bib:regSF6Miljo} \textit{regjeringen.no}, \url{http://www.regjeringen.no/nb/dep/md/dok/regpubl/stmeld/2011-2012/meld-st-21-2011-2012/5/5.html?id=682932}, \textit{21.10.2013}
 
 
+
+\bibitem{bib:TET4160HVIM} \textit{E. Ildstad}, "\textit{High Voltage Insulation Materials}", \textit{Trondheim: Norwegian University of Science and Technology, 2012
+}, August 2012.
 
 \end{thebibliography}
 \end{document}
