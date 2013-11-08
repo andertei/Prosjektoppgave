@@ -361,7 +361,8 @@ Table \ref{tab:leakageRatesProdSF6} points out that most of the emissions into t
 \newpage
 
 \section{Discussion}
-\subsection{The difference between air and SF$_6$ as interrupting medium} \label{sec:airandsf} 
+
+\subsection{The difference between air and SF$_6$ as interrupting medium} \label{sec:airandsf}
 
 Air and SF$_6$ are both fairly good interruption gasses and have been successfully used in the past to interrupt high currents at high voltages. The primary difference between the two designs is the dimensions of the switchgear. Traditionally, circuit breakers using air as an interrupting medium and not SF$_6$ have been lager and used higher pressures to interrupt the current. When producing circuit breakers and lager load brake switches optimization and careful design regarding material usage and dimensions most be taken into account. The story is however a bit different when designing load break switches for medium voltage levels. In most cases design principles from circuit breaker designs have been scaled down and reused in load break switches. This makes reason to believe that some of the compact load break switch designs that are on the market today are in fact over scaled. If they are over scaled it might be possible to keep the dimensions equal and exchange the interrupting gas from SF$_6$ to air, however careful optimization must be done to meet the demands to dielectric strength and interruption capabilities. Since most of the research on switchgear technology is done on circuit breakers the difference between air and SF$_6$ on a medium voltage load break switch may not be directly linked with the difference when regarding circuit breakers. However some of the main differences and challenges with the use of air instead of SF$_6$ is pointed out below.
 
@@ -405,6 +406,56 @@ On regarding interruption capabilities SF$_6$ might seems superior to air. Howev
 Since only half of the SF$_6$ bank in medium voltage switchgear is regulated through the environmental department with the voluntary agreement mentioned in section \ref{sec:EnvirImp} it is possible that the government will be more active in regulation of these kind of equipment if a more "green"-technology becomes available. Taxation or partially banning this equipment to gain some control over the use might be done. But as pointed out in section \ref{sec:EnvirImp} in table \ref{tab:leakageRatesProdSF6} most of the SF$_6$ emissions in Norway is from gas-insulated switchgear, mostly used in high voltage installations. These are emissions are hard to completely remove and even if air might be possible to use in compact medium voltage breakers, it is probably not possible to use in most high voltage gas-insulated systems. Therefore the impact in SF$_6$ emissions if completely phasing out SF$_6$ based medium voltage switchgear might not be very high. However it is one of several things that might be done to reduce the SF$_6$ emissions in Norway.
 
 In Norway handling and leakage control of SF$_6$ is quite good, especially if compared to some other countries. Therefore it can be argued that the biggest reduction in SF$_6$ emissions will be in other countries where SF$_6$ is not regulated in the same manner. However this reduction depends on that air based equipment is made available and taken to use. To make this happen it is important that an air based breaker is equally good or better than its SF$_6$ counterpart to interrupt currents. It must also be economical feasible when it comes to lifetime, productions and maintenance costs. Some kind of international agreement to reduce SF$_6$ emissions might also make the air based breaker more economical feasible on the global market.
+
+\subsection{Material hold-fastness of the arcing contacts}
+
+Due to harsh condition during the interruption process it is important that the different parts of the switch is able to tolerate the stress of an arc for several breaking operations and for at least two current zero crossings before the arc is extinguished. As briefly described in section \ref{sec:genDes} the arcing contacts in a LBS consists of different metals and composites to be able to withstand the stress from the arc. A common material for the arcing contact is a pseudo-alloy of copper and tungsten called copper-tungsten, this material is also used in the contact-set of the test switch. The main advantage of this pseudo-alloy it that it is able to conduct current quite well because of the good conductivity of the copper, however copper alone will evaporate if exposed to an arc. The tungsten have a high boiling point, and will not evaporate with the same speed as the copper, this makes the contacts more resistant to the stress of the arc. Of the two geometries tested there was a significant difference in the material hold-fastness in the male contact. In figure \ref{fig:unused_d3} a new unused male contact is displayed.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{Bilder/Discussion/d3_unused.png}
+\caption{Unused male arcing contact of copper-tungsten.} \label{fig:unused_d3}
+\end{figure}
+
+For the low current test, with an RMS value of 400 A, both contact diameters handled the wear quite well. The pin that had a diameter of 4 mm was exposed to SETT INN ANTALL TESTER. It was also used at the high current test, with an RMS value of 630 A, and was exposed to SETT INN ANTALL TESTER. The material in the pin handled this quite well, all though some sign of damage was observed this did not seem to have an impact on the interruption capabilities or mechanical strength of the pin. The pin after the tests is displayed in figure \ref{fig:d4_burn_side} and \ref{fig:d4_burn_top}. The pin was exposed to both successful and unsuccessful interruptions, therefore both short and long arcing times.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.2]{Bilder/Discussion/d4_630and400_burn.png}
+  \caption{Male contact with a diameter of 4 mm, \newline side view.}
+  \label{fig:d4_burn_side}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.53]{Bilder/Discussion/d4_630and400_top_burn.png}
+  \caption{Male contact with a diameter of 4 mm, \newline top view.}
+  \label{fig:d4_burn_top}
+\end{minipage}
+\end{figure}
+
+The smallest geometry, with a diameter of 3 mm, handled the 400 A test in the same manner as the pin with a diameter of 4 mm. It had signs of wear, but did not needed to be changed during the test and its wear is not assumed to have had an impact on the test result.
+
+These results might indicate that a small amount of copper-tungsten is can be used in the arcing contacts in a commercial LBS, which is good to minimize costs. However it is highly dependent on the current amplitude, since the cross-section of the arc is highly dependent on the current magnitude. It is the cross-section and temperature of the arc that is assumed to have the biggest impact of the wear in the contact pins. The smallest geometry did not tolerate the high current test, and was severely damage fast. In figure \ref{fig:d3_burn_side} and \ref{fig:d3_burn_top} the smallest pin is displayed after just five unsuccessful interruptions. 
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.2]{Bilder/Discussion/d3_630_burn.png}
+  \caption{Male contact with a diameter of 3 mm, \newline side view.}
+  \label{fig:d3_burn_side}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.53]{Bilder/Discussion/d3_630_top_burn.png}
+  \caption{Male contact with a diameter of 3 mm, \newline top view.}
+  \label{fig:d3_burn_top}
+\end{minipage}
+\end{figure}
+
+Figure \ref{fig:d3_burn_top} illustrates that droplets of copper that have vaporised from the tip and condensed longer down on the pin. The tip of the pin is severely disfigured and only parts of the tungsten skeleton remains while most of the copper has vaporised from the pin. The results from this test have a lot more variation than the other tests and it might be partially due to the fast wear down of the pin. If the arcing time was low and the current was interrupted in the first CZ, the wear down of the contact was relatively low. It might therefore be possible to use this pin diameter if a quick interruption can be guaranteed. It should be noted that even if it is possible to successfully break the current several times without wearing down the pin, a small pin geometry might not be dielectric suitable, especially if air is used instead of SF$_6$. A small round shape might be to sharp and can result in a enhancement of the electrical field around the tip, giving a smaller breakdown voltage. This might give a problem with spark-overs when the switch is open, due to transients in the power grid, or it can result in a too long arcing time when closing the switch. Both incidents can be harmful to a fragile arcing contact and may shorten the lifetime of the LBS.
 
 \subsection{arcing voltage and pressure}
 
