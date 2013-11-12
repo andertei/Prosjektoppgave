@@ -55,6 +55,98 @@ Several different nozzle geometries are going to be tested and it is assumed tha
 \newpage
 \section{Method} \label{sec:Method}
 \textit{ Most of the information in section \ref{sec:Method} is collected from the article "Air Flow Investigation for a Medium Voltage for a Medium Voltage Load Break Switch" by N. S. Aanensen, E. Jonsson, and M. Runde}
+\newline
+
+\subsection{The Switch and Contact Geometry}
+This experiment is conducted using copper-tungsten arcing contacts, polytetraflourelthylene (PTFE) nozzles and air as interrupting medium. It is an open system, with the surrounding air at atmospheric pressure \textit{p$_0$} and a six litre tank with a pre-filled upstream overpressure \textit{p$_u$}, used during the interruption process to quench the arc. It is possible to adjust the upstream pressure, contact speed and position at current zero (CZ) independently, as well as the contact and nozzle geometry. The current and transient recovery voltage (TRV) can be change by changing the parameters of the laboratory test circuit.
+
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.3]{Bilder/Method/contactSetUp.png}
+\caption{The contact and nozzle. The diameter of the contact is \textit{d} and the inner diameter of the nozzle is \textit{D}  \cite{bib:AFIMVLBA}.} \label{fig:contactAndNozzle}
+\end{figure}
+
+A simple drawing of the contact is displayed in figure \ref{fig:contactAndNozzle}. The length of the cylindrical nozzle is 30 mm and the inner diameter is \textit{D}. Two different contact geometries that is going to be tested and are denoted a and b. The dimensions of the different geometries are illustrated in table \ref{tab:contGeoPara} and how the different dimensions are defined is illustrated in figure \ref{fig:AreacontactAndNozzle}.
+
+\begin{table}[H]
+\center
+\caption{Contact geometry parameters}
+ \begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Geometry & D [mm] & d [mm] & $\frac{D}{d}$ & $A_{contact}$ [mm$^2$] & $A_{ring}$ [mm$^2$] & $A_{nozzle}$ [mm$^2$] \\ 
+\hline 
+a & 10.4 & 4 & 2.60 & 12.6 & 72.4 & 84.9 \\ 
+\hline 
+b & 8 & 3 & 2.67 & 7.07 & 43.2 & 50.3 \\ 
+\hline 
+\end{tabular} 
+\label{tab:contGeoPara}
+\end{table}
+
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.3]{Bilder/Method/areaSetUp.png}
+\caption{Overview over how the different areas and diameters are defined \cite{bib:AFIMVLBA}.} \label{fig:AreacontactAndNozzle}
+\end{figure}
+
+The contact position \textit{x} is defined as the axial distance between the tulip and the pin contact. At starting position, \textit{x}= -60 mm, the pin contact is acting as a plug for the tank. This is making it possible to set on upstream pressure. The contact is hold in place by a electromagnet and is set to motion when the magnet releases the contact by a compressed spring. The spring accelerates the pin contact up to a speed of approximately 5.5 m/s at \textit{x}=0. At this position the spring is unloaded  and the pin moves with a constant speed until the contact is fully open at \textit{x}=110 mm.
+
+\subsection{Test circuit}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.3]{Bilder/Method/circuit.png}
+\caption{Circuit used for the interruption test \cite{bib:AFIMVLBA}.} \label{fig:testCurcuit}
+\end{figure}
+
+Figure \ref{fig:testCurcuit} is the laboratory test circuit used for the interruption test and supplies 50 Hz / 13.8 kV . It is possible to shape the TRV with tuning the parameters: L$_1$, L$_s$, R$_1$, R$_d$ and C. The systems short circuit parameters are R$_{sc}$ and L$_{sc}$. The TRV generated during interruption is set to simulate the standard for a 24 kV / 630 A class from the International Electrotechnical Commission (IEC) witch corresponds to:
+
+\begin{itemize}
+\item The initial part of the TRV has a rate of rise in recovery voltage (RRRV) of 71 - 73 V / $\mu$s.
+	\begin{itemize}
+		\item voltage difference is measured over the first 20 $\mu$s after CZ.
+	\end{itemize}
+\item The first voltage peak is between 7.2 and 7.4 kV with a rise time of approximately 96 $\mu$s
+\end{itemize}
+
+\begin{table}[H]
+\center
+\caption{Circuit Parameters and Resulting Current \cite{bib:AFIMVLBA} }
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+L$_s$ [mH] & L$_1$ [mH] & R$_1$ [$\Omega$] & C [nF] & R$_{d}$ [$\Omega$] & I [A] \\ 
+\hline 
+14.5 & 138.4 & 35.5 & 74 & 248 & 400 \\ 
+\hline 
+6.9 & 86.2 & 22.1 & 102 & 198 & 630 \\ 
+\hline 
+\end{tabular} 
+\label{tab:testParameters}
+\end{table}
+
+In table \ref{tab:testParameters} the value of the different test circuit parameters and the corresponding current can be observed. The test are done at currents with an RMS value of 400 A and 630 A. In all the test the TRV is kept constant up to and including the first voltage peak. In the case of a failed interruption thermal re-ignition occurs within a few microseconds after CZ.
+
+A resistive transducer is measuring the contact position while a Hall effect current transducer is measuring the current through the test switch. The voltage between the contacts is measured with a parallel resistive / capacitive voltage divider. All measurements are transmitted through optical fibres to a 12 bit resolution transient recorder with a sampling frequency is 2.5 MHZ. The pressure in the tank is only measured before each test with an accuracy of 0.01 bar.
+
+\subsection{Procedure}
+Interruption tests with CZ occuring both inside and outside the nozzle are carried out. Previous work with a similar setup found that the interruption capability is better outside the nozzle. With two current ratings a total of four cases have been tested, if counting interruptions inside and outside the nozzle as the same case. The first and second CZ is included in this study to provide as much data as possible.
+
+Inside nozzle is defined as contact position x = [5, 25] mm and outside nozzle as x = [35, 60] mm at first CZ. Interruption tests with first CZ either in the vicinity of the tulip contact (x $<$ 5 mm) or in the boundary region between inside and outside the nozzle (x = 25, 35 mm) are not included in the "interruption success rate graphs" but are presented in tables displaying raw data. The first CZ occurred within x $<$ 60 mm and the second CZ occurred for x $>$ 60 mm, as the contact speed during all tests was 5.5 mm/ms $\pm$ 0.5 mm/ms.
+
+The test procedure for each of the four cases as follows: 
+\begin{itemize}
+\item[1.] A pressure level that seems to be in the area of interest is found by performing some initial test interruptions at different pressure levels. This level is kept constant for ten interruption tests, five inside and five outside the nozzle.
+\item[2.] If a pressure level results in less than ten out of ten successful interruptions, ten new tests with a higher upstream pressure (next level) is conducted. This is repeated until at least one pressure level with ten successful interruptions is found.
+\item[3.] Then, the pressure is stepped down until seven or more out of ten interruption attempts fail or the lowest possible pressure level is tested.
+\end{itemize}
+
+The pressure level step is 0.1 bar for all tests and at least three pressure levels are tested for each case.\newline
+
+The pin is cleaned, polished, and greased between each test to ensure a smooth surface. The contacts and nozzle are replaced regularly to avoid contact wear and nozzle deformation. This is to ensure that the geometry is constant through the whole experiment.
+
+
+
+
 
 
 \newpage
@@ -123,6 +215,10 @@ The gas flow is partially dependent on the cross-section of the arc, which again
 The self-blast, or third generation breaker, was developed with the goal of reducing mechanical power of the operating system, making it cheaper and less complex. Figure \ref{fig:selfBlast} illustrates the working principle of a breaker using self-blast to interrupt an arc. The difference between self-blast and puffer mechanism is that the puffer mechanism increases the pressure by reducing the volume. Rather than the self-blast design which have a constant volume relying on a raise in temperature to increase the gas pressure \cite{bib:CBAC}. The self-blast design uses the heat generated from an arc burning between the arcing contacts to interrupt the current. The gas expands as it is heated by the burning arc, this increase in pressure leads to a gas flow on the arc, which cools it down leading to the quenching of it.
 
 There are some disadvantages with the self-blast principle when compared to the puffer mechanism. The self-blast have a lower dielectric strength due to hot gas between the contacts after CZ. This gives a higher chance of re-ignition since hot gas has a lower ionisation energy than cold gas. It is also not well suited to break smaller currents. This is because the arc is less intense and therefore do not heat the gas sufficiently to create a strong enough blast. Therefore it is common to combine self-blast and puffer mechanism in a hybrid design, so that it can handle both small and large currents. A compact LBS design using air as interrupting medium will probably rely on a puffer or a hard gas design. This is because of the smaller currents an LBS is facing compared to a circuit breaker.
+
+\subsection{Air flow considerations}
+\textit{ Most of the information in section \ref{sec:Method} is collected from the article "Air Flow Investigation for a Medium Voltage for a Medium Voltage Load Break Switch" by N. S. Aanensen, E. Jonsson, and M. Runde}
+
 
 \subsubsection{Test switch}
 A new medium voltage laboratory for load break switch development have been designed with the possibilities to vary important design parameters for a load break switch. When the industry develops switchgear technology they tend to alter several different parameters at the same time. For instance, if they wish to alter the speed of the airflow in a puffer LBS, they might increases the separation speed of the contacts, since these functions often are linked in a puffer design. This will also result in a higher pressure not only and not only a higher volumetric flow. This will make it hard to conclude which parameter that was the most critical for a successful interruption. Therefore a laboratory switch have been design where each of the different parameters can be adjusted without changing other critical parameter. This will make systematic researching possible and optimisation of certain designs criteria, like dimensions, will be a lot simpler.
