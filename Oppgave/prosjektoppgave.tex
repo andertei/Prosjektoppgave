@@ -217,8 +217,35 @@ The self-blast, or third generation breaker, was developed with the goal of redu
 There are some disadvantages with the self-blast principle when compared to the puffer mechanism. The self-blast have a lower dielectric strength due to hot gas between the contacts after CZ. This gives a higher chance of re-ignition since hot gas has a lower ionisation energy than cold gas. It is also not well suited to break smaller currents. This is because the arc is less intense and therefore do not heat the gas sufficiently to create a strong enough blast. Therefore it is common to combine self-blast and puffer mechanism in a hybrid design, so that it can handle both small and large currents. A compact LBS design using air as interrupting medium will probably rely on a puffer or a hard gas design. This is because of the smaller currents an LBS is facing compared to a circuit breaker.
 
 \subsection{Air flow considerations} \label{sec:AirFlow}
-\textit{ Most of the information in section \ref{sec:AirFlow} is collected from the article "Air Flow Investigation for a Medium Voltage for a Medium Voltage Load Break Switch" by N. S. Aanensen, E. Jonsson, and M. Runde}
+\textit{ Most of the information in section \ref{sec:AirFlow} is collected from the article "Air Flow Investigation for a Medium Voltage for a Medium Voltage Load Break Switch" by N. S. Aanensen, E. Jonsson, and M. Runde} \newline
 
+From Bernoulli's equation it can be deduced that the maximum velocity of the gas flow is obtained from a set pressure, \textit{p}, difference as given in equation \eqref{eq:Bernoulli}.
+
+\begin{equation} \label{eq:Bernoulli}
+v_{max}=\sqrt{2 \Delta \frac{p}{\rho}}
+\end{equation}
+
+$\rho$ is the mass density of the fluid. The fluid is assumed to have an ideal flow without viscosity and that it is incompressible. $v_{max}$ will occur on the narrowest part of the geometry. The velocity in the other parts of the nozzle and contact geometry is so that the volumetric flow rate is kept constant. The relation between volumetric flow rate \textit{Q} and $v_{max}$ is indicated in equation \eqref{eq:flowRate}.
+
+\begin{equation} \label{eq:flowRate}
+Q=v_{max} A_{contact}
+\end{equation} 
+
+If table \ref{tab:contGeoPara} is consulted it indicates that $A_{contact}$ is smaller than both $A_{ring}$ and $A_{nozzle}$. This means that for the given geometries in this experiment $v_{max}$ is allays set by the area of the contact and the gas velocity will be the same whenever the pin is inside or outside the nozzle since the volumetric flow is constant. The velocity of the gas flow in the nozzle is set by equation \eqref{eq:VolumetricFlow}.
+\begin{equation*}
+Q=v_{max} A_{contact} = v_{nozzle} A_{nozzle}
+\end{equation*}
+
+
+\begin{equation} \label{eq:VolumetricFlow}
+v_{nozzle}= v_{max}\frac{A_{contact}}{A_{nozzle} }= v_{max} (\frac{d}{D})^2
+\end{equation} 
+
+$v_{nozzle}$ is approximately the same for geometry \textit{a} and \textit{b} since the fraction $\frac{D}{d}$ form table \ref{tab:contGeoPara} is almost the same for both geometries. The volumetric flow rate will increase with the increasing geometry size according to A$_{contact}$
+
+The deduction above is based on the assumption that the fluid is non-compressible and have a ideal flow without viscosity. This is probably not valid since turbulence, wall effects, variations in density and temperature are likely to be present. For pressure differences above 0.7 bar it is expected that sonic speeds can be reached by the gas flow. Simulations of compressible gas flows at ambient temperature have therefore been carried out by Nina Sasaki Aanensen, to verify that the two geometries in fact will have similar air flow velocity for equal upstream pressure and that the air flow velocity is approximately equal when the pin is inside and outside the nozzle. 
+
+It is safe to assume that an burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate. It is difficult to know exactly how an arc interacts with the gas flow and a good simulation tool for load currents is still to be obtained.
 
 \subsubsection{Test switch}
 A new medium voltage laboratory for load break switch development have been designed with the possibilities to vary important design parameters for a load break switch. When the industry develops switchgear technology they tend to alter several different parameters at the same time. For instance, if they wish to alter the speed of the airflow in a puffer LBS, they might increases the separation speed of the contacts, since these functions often are linked in a puffer design. This will also result in a higher pressure not only and not only a higher volumetric flow. This will make it hard to conclude which parameter that was the most critical for a successful interruption. Therefore a laboratory switch have been design where each of the different parameters can be adjusted without changing other critical parameter. This will make systematic researching possible and optimisation of certain designs criteria, like dimensions, will be a lot simpler.
