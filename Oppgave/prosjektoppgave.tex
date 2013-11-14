@@ -24,7 +24,7 @@
 \maketitle
 %SummaryNyttige pdf-filer/SF6conduct.pdf
 \newpage
-\section{Summary}
+\section*{Summary}
 \newpage
 \tableofcontents
 \newpage
@@ -65,6 +65,7 @@ This experiment is conducted using copper-tungsten arcing contacts, polytetraflo
 \includegraphics[scale=0.3]{Bilder/Method/contactSetUp.png}
 \caption{The contact and nozzle. The diameter of the contact is \textit{d} and the inner diameter of the nozzle is \textit{D}  \cite{bib:AFIMVLBA}.} \label{fig:contactAndNozzle}
 \end{figure}
+
 
 A simple drawing of the contact is displayed in figure \ref{fig:contactAndNozzle}. The length of the cylindrical nozzle is 30 mm and the inner diameter is \textit{D}. Two different contact geometries that is going to be tested and are denoted a and b. The dimensions of the different geometries are illustrated in table \ref{tab:contGeoPara} and how the different dimensions are defined is illustrated in figure \ref{fig:AreacontactAndNozzle}.
 
@@ -225,13 +226,13 @@ From Bernoulli's equation it can be deduced that the maximum velocity of the gas
 v_{max}=\sqrt{2 \Delta \frac{p}{\rho}}
 \end{equation}
 
-$\rho$ is the mass density of the fluid. The fluid is assumed to have an ideal flow without viscosity and that it is incompressible. $v_{max}$ will occur on the narrowest part of the geometry. The velocity in the other parts of the nozzle and contact geometry is so that the volumetric flow rate is kept constant. The relation between volumetric flow rate \textit{Q} and $v_{max}$ is indicated in equation \eqref{eq:flowRate}.
+$\rho$ is the mass density of the fluid. The fluid is assumed to have an ideal flow without viscosity and incompressible behaviour. $v_{max}$ will occur on the narrowest part of the geometry. The velocity in the other parts of the nozzle is defined by a constant volumetric flow rate. The relation between volumetric flow rate \textit{Q} and $v_{max}$ is presented in equation \eqref{eq:flowRate}.
 
 \begin{equation} \label{eq:flowRate}
 Q=v_{max} A_{contact}
 \end{equation} 
 
-If table \ref{tab:contGeoPara} is consulted it indicates that $A_{contact}$ is smaller than both $A_{ring}$ and $A_{nozzle}$. This means that for the given geometries in this experiment $v_{max}$ is allays set by the area of the contact and the gas velocity will be the same whenever the pin is inside or outside the nozzle since the volumetric flow is constant. The velocity of the gas flow in the nozzle is set by equation \eqref{eq:VolumetricFlow}.
+If table \ref{tab:contGeoPara} is consulted it indicates that the area $A_{contact}$ is smaller than both $A_{ring}$ and $A_{nozzle}$ for both geometries. This means that for the geometries in this experiment $v_{max}$ is allays set by the area of the female contact and the gas velocity will be the same whenever the pin is inside or outside the nozzle because the volumetric flow is constant. The velocity of the gas flow in the nozzle is set by equation \eqref{eq:VolumetricFlow}.
 \begin{equation*}
 Q=v_{max} A_{contact} = v_{nozzle} A_{nozzle}
 \end{equation*}
@@ -247,32 +248,32 @@ The deduction above is based on the assumption that the fluid is non-compressibl
 
 It is safe to assume that an burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate. It is difficult to know exactly how an arc interacts with the gas flow and a good simulation tool for load currents is still to be obtained.
 
-\subsubsection{Test switch}
-A new medium voltage laboratory for load break switch development have been designed with the possibilities to vary important design parameters for a load break switch. When the industry develops switchgear technology they tend to alter several different parameters at the same time. For instance, if they wish to alter the speed of the airflow in a puffer LBS, they might increases the separation speed of the contacts, since these functions often are linked in a puffer design. This will also result in a higher pressure not only and not only a higher volumetric flow. This will make it hard to conclude which parameter that was the most critical for a successful interruption. Therefore a laboratory switch have been design where each of the different parameters can be adjusted without changing other critical parameter. This will make systematic researching possible and optimisation of certain designs criteria, like dimensions, will be a lot simpler.
+%\subsubsection{Test switch}
+%A new medium voltage laboratory for load break switch development have been designed with the possibilities to vary important design parameters for a load break switch. When the industry develops switchgear technology they tend to alter several different parameters at the same time. For instance, if they wish to alter the speed of the airflow in a puffer LBS, they might increases the separation speed of the contacts, since these functions often are linked in a puffer design. This will also result in a higher pressure not only and not only a higher volumetric flow. This will make it hard to conclude which parameter that was the most critical for a successful interruption. Therefore a laboratory switch have been design where each of the different parameters can be adjusted without changing other critical parameter. This will make systematic researching possible and optimisation of certain designs criteria, like dimensions, will be a lot simpler.
 
-\begin{figure} [h]
-\centering
-\includegraphics[scale=0.5]{Bilder/Theory/SchematicTestSwitch.png}
-\caption{Test switch} \label{fig:testSwitch}
-\end{figure}
+%\begin{figure} [h]
+%\centering
+%\includegraphics[scale=0.5]{Bilder/Theory/SchematicTestSwitch.png}
+%\caption{Test switch} \label{fig:testSwitch}
+%\end{figure}
 
-Figure \ref{fig:testSwitch} shows the physical appearance of the switch and how the different parameter can be adjusted. BLA BLA TAKE A PICTURE OF THE SWITCH, WRITE SOME NUMBERS ON IT. TAKE ABOUT THEM AND WITCH PARAMETERS THAT CAN BE ADJUSTED.
+%Figure \ref{fig:testSwitch} shows the physical appearance of the switch and how the different parameter can be adjusted. BLA BLA TAKE A PICTURE OF THE SWITCH, WRITE SOME NUMBERS ON IT. TAKE ABOUT THEM AND WITCH PARAMETERS THAT CAN BE ADJUSTED.
 
-\begin{figure} [h]
-\centering
-\includegraphics[scale=0.5]{Bilder/Theory/SchematicTestSwitch.png}
-\caption{Tulip, nozzle and pin, L and D is the length and inner diameter of the nozzle, x is contact position. Dimensions are in millimetres.   \cite{bib:CIAMVLBS}} \label{fig:SchematicTestSwitch}
-\end{figure}
+%\begin{figure} [h]
+%\centering
+%\includegraphics[scale=0.5]{Bilder/Theory/SchematicTestSwitch.png}
+%\caption{Tulip, nozzle and pin, L and D is the length and inner diameter of the nozzle, x is contact position. Dimensions are in millimetres.   \cite{bib:CIAMVLBS}} \label{fig:SchematicTestSwitch}
+%\end{figure}
 
-Figure \ref{fig:SchematicTestSwitch} display the former nozzle geometries and it can be clearly seen from this picture that the doughnut area is smaller than the tulip area. It is possible that this will give a clogging effect when the pin is inside the nozzle and result in a poorer airflow and interrupting capabilities for this situation. In figure \ref{fig:differentGeometries} the different contact geometries that have been made is shown. Geometries a1, b1, and c1 have been tested and the results showed that most of the successful interruptions happen when the pin was outside the nozzle. It is possible that this is the result of a clogging effect that takes place between the nozzle and pin. Therefore geometries b2 and c2 was created. The geometries is similar to b1 and c1 since they have the same nozzle area, respectively $44 \ mm^2$ and $66 \ mm^2$. The volumetric airflow will however be smaller for b2 and c2 because it have been created a choking point in the tulip. 
+%Figure \ref{fig:SchematicTestSwitch} display the former nozzle geometries and it can be clearly seen from this picture that the doughnut area is smaller than the tulip area. It is possible that this will give a clogging effect when the pin is inside the nozzle and result in a poorer airflow and interrupting capabilities for this situation. In figure \ref{fig:differentGeometries} the different contact geometries that have been made is shown. Geometries a1, b1, and c1 have been tested and the results showed that most of the successful interruptions happen when the pin was outside the nozzle. It is possible that this is the result of a clogging effect that takes place between the nozzle and pin. Therefore geometries b2 and c2 was created. The geometries is similar to b1 and c1 since they have the same nozzle area, respectively $44 \ mm^2$ and $66 \ mm^2$. The volumetric airflow will however be smaller for b2 and c2 because it have been created a choking point in the tulip. 
 
-\begin{figure} [h]
-\centering
-\includegraphics[scale=0.6]{Bilder/Theory/differentGeometries.png}
-\caption{Different contact geometries \cite{bib:CIAMVLBS}} \label{fig:differentGeometries}
-\end{figure}
+%\begin{figure} [h]
+%\centering
+%\includegraphics[scale=0.6]{Bilder/Theory/differentGeometries.png}
+%\caption{Different contact geometries \cite{bib:CIAMVLBS}} \label{fig:differentGeometries}
+%\end{figure}
 
-It is expected that b2 and c2 will need a higher pressure than b1 and c1 to perform a successful interruption, due to the lower airflow. However it is expected that they will have an equal successrate no matter if the pin is inside the nozzle or outside the nozzle.
+%It is expected that b2 and c2 will need a higher pressure than b1 and c1 to perform a successful interruption, due to the lower airflow. However it is expected that they will have an equal successrate no matter if the pin is inside the nozzle or outside the nozzle.
 
 \newpage
 \subsection{Interrupting currents} 
@@ -518,7 +519,9 @@ Since only half of the SF$_6$ bank in medium voltage switchgear is regulated thr
 In Norway, handling and leakage control of SF$_6$ is quite good, especially when compared to some other countries. Therefore it can be argued that the biggest reduction in SF$_6$ emissions will be in other countries where SF$_6$ is not regulated in the same manner. However, this reduction depends on air-bases equipment being made available and taken to use. To make this happen it is important that air-based LBSes is equally good or better than its SF$_6$ counterpart to interrupt currents. It must also be economicly feasible regarding lifetime, productions, and maintenance costs. Some kind of international agreement to reduce SF$_6$ emissions might also make the air-based breaker more economicly feasible on the global market. With this in mind, it is possible to assume that the global SF$_6$ emissions will be reduced if a competitive air-based LBS is developed.
 
 \section{Results}
+\subsection{Interruption success rate}
 
+\subsection{Arcing voltage}
 \newpage
 
 \section{Discussion}
@@ -588,7 +591,9 @@ As illustrated in figure \ref{fig:used_d4_d3_female} the female contact for both
 
 \subsection{air pressure, speed and volume flow}
 \newpage
+\section{Conclusion}
 
+\newpage
 \begin{thebibliography}{10}
 
 
@@ -626,4 +631,7 @@ As illustrated in figure \ref{fig:used_d4_d3_female} the female contact for both
 \bibitem{bib:AFIMVLBA} \textit{N. S. Aanensen, E. Jonsson, and M. Runde}, "\textit{Air Flow Investigation for a Medium Voltage for a Medium Voltage Load Break Switch}", \textit{IEEE Trans. Power Delivery}, to be published.
 
 \end{thebibliography}
+
+\appendix
+\section{Test Results}
 \end{document}
