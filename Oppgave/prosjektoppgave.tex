@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{float}
+\usepackage{multirow}
 
 %symbolliste
 
@@ -129,10 +130,10 @@ In table \ref{tab:testParameters} the value of the different test circuit parame
 
 A resistive transducer is measuring the contact position while a Hall effect current transducer is measuring the current through the test switch. The voltage between the contacts is measured with a parallel resistive / capacitive voltage divider. All measurements are transmitted through optical fibres to a 12 bit resolution transient recorder with a sampling frequency is 2.5 MHZ. The pressure in the tank is only measured before each test with an accuracy of 0.01 bar.
 
-\subsection{Procedure}
+\subsection{Procedure} \label{sec:procedure}
 Interruption tests with CZ occuring both inside and outside the nozzle are carried out. Previous work with a similar setup found that the interruption capability is better outside the nozzle. With two current ratings a total of four cases have been tested, if counting interruptions inside and outside the nozzle as the same case. The first and second CZ is included in this study to provide as much data as possible.
 
-Inside nozzle is defined as contact position x = [5, 25] mm and outside nozzle as x = [35, 60] mm at first CZ. Interruption tests with first CZ either in the vicinity of the tulip contact (x $<$ 5 mm) or in the boundary region between inside and outside the nozzle (x = 25, 35 mm) are not included in the "interruption success rate graphs" but are presented in tables displaying raw data. The first CZ occurred within x $<$ 60 mm and the second CZ occurred for x $>$ 60 mm, as the contact speed during all tests was 5.5 mm/ms $\pm$ 0.5 mm/ms.
+Inside nozzle is defined as contact position x = [5, 25] mm and outside nozzle as x = [35, 60] mm at first CZ. Interruption tests with first CZ either in the vicinity of the female contact (x $<$ 5 mm) or in the boundary region between inside and outside the nozzle (x = 25, 35 mm) are not included in the "interruption success rate graphs" but are presented in tables displaying raw data. The first CZ occurred within x $<$ 60 mm and the second CZ occurred for x $>$ 60 mm, as the contact speed during all tests was 5.5 mm/ms $\pm$ 0.5 mm/ms.
 
 The test procedure for each of the four cases as follows: 
 \begin{itemize}
@@ -535,6 +536,25 @@ In Norway, handling and leakage control of SF$_6$ is quite good, especially when
 
 \section{Results}
 \subsection{Interruption success rate}
+Originally the intention with the experiments was to test if an equal air flow velocity resulted in a equal interruption success rate, whenever the pin was inside or outside the nozzle in the moment of interruption. However results from the initial testing indicated a clear trend for the success rate inside the nozzle, that dismissed this first hypothesis since the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore the testing procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption test was done at the relevant pressure levels outside the nozzle as described in section \ref{sec:procedure}. The goal with the experiment is to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
+
+For the interruption tests there are three outcomes, at the first CZ the interruption can succeed or a thermal re-ignition can occur. Given a thermal re-ignition in the first CZ the current can be interrupted at the second CZ or another thermal re-ignition can occur. The end result have however two outcomes success or failure, explained by figure \ref{fig:pilSuccessOfFail}. Besides the outcomes listed there is a small chance of a dielectric re-ignition. However these are rare and are therefore not included. Experience has also shown that in practical interruption cases thermal re-ignitions are the most demanding tasks for LBS'es in the 24 kV class \cite{bib:AFIMVLBA}. During testing of geometry \textit{b} at 630 A, two re-ignitions occurred that was in the area between thermal and dielectric re-ignition, these was counted as thermal failures.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{Bilder/Results/interruptionFlowChart.png}
+\caption{Flowchart illustrating the different interruption scenarios.} \label{fig:pilSuccessOfFail}
+\end{figure}
+
+In figure \ref{fig:CurrentAndVoltageWaveform} the current and voltage during a unsuccessful and successful are indicated for a 630 A 24 kV test. The upper plot illustrates a thermal re-ignition, as the plot shows; the current is almost unaffected of the interruption attempt and continues as normal after the CZ. The lower plot is illustrating a successful interruption, where the current have stopped flowing after CZ and a recovery voltage have raised between the contacts.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{Bilder/Results/differentInterruptions.png}
+\caption{Current and voltage waveforms near CZ for two different interruption outcomes \cite{bib:AFIMVLBA}.} \label{fig:CurrentAndVoltageWaveform}
+\end{figure}
+
+   
 
 \subsection{Arcing voltage}
 
@@ -542,7 +562,7 @@ In Norway, handling and leakage control of SF$_6$ is quite good, especially when
 
 \section{Discussion}
 
-
+(For the 400 A tests for both geometries the distance meashurer was damage. Resulting in a bigger uncertanly to the pin position.
 
 \subsection{Durability of the arcing contacts}
 
