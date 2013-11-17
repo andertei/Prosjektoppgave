@@ -534,11 +534,13 @@ Since only half of the SF$_6$ bank in medium voltage switchgear is regulated thr
 
 In Norway, handling and leakage control of SF$_6$ is quite good, especially when compared to some other countries. Therefore it can be argued that the biggest reduction in SF$_6$ emissions will be in other countries where SF$_6$ is not regulated in the same manner. However, this reduction depends on air-bases equipment being made available and taken to use. To make this happen it is important that air-based LBSes is equally good or better than its SF$_6$ counterpart to interrupt currents. It must also be economicly feasible regarding lifetime, productions, and maintenance costs. Some kind of international agreement to reduce SF$_6$ emissions might also make the air-based breaker more economicly feasible on the global market. With this in mind, it is possible to assume that the global SF$_6$ emissions will be reduced if a competitive air-based LBS is developed.
 
-\section{Results}
-\subsection{Interruption success rate}
-Originally the intention with the experiments was to test if an equal air flow velocity resulted in a equal interruption success rate, whenever the pin was inside or outside the nozzle in the moment of interruption. However results from the initial testing indicated a clear trend for the success rate inside the nozzle, that dismissed this first hypothesis since the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore the testing procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption test was done at the relevant pressure levels outside the nozzle as described in section \ref{sec:procedure}. The goal with the experiment is to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
+\newpage
 
-For the interruption tests there are three outcomes, at the first CZ the interruption can succeed or a thermal re-ignition can occur. Given a thermal re-ignition in the first CZ the current can be interrupted at the second CZ or another thermal re-ignition can occur. The end result have however two outcomes success or failure, explained by figure \ref{fig:pilSuccessOfFail}. Besides the outcomes listed there is a small chance of a dielectric re-ignition. However these are rare and are therefore not included. Experience has also shown that in practical interruption cases thermal re-ignitions are the most demanding tasks for LBS'es in the 24 kV class \cite{bib:AFIMVLBA}. During testing of geometry \textit{b} at 630 A, two re-ignitions occurred that was in the area between thermal and dielectric re-ignition, these was counted as thermal failures.
+\section{Results}
+\subsection{Interruption experiment}
+Originally the intention with the experiments was to test if an equal air flow velocity when the pin was inside or outside the nozzle in the moment of interruption resulted in a equal interruption success rate. However this hypothesis was dismissed since the results from the initial testing indicated that the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore the testing procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption test was done at the relevant pressure levels outside the nozzle as described in section \ref{sec:procedure}. The goal with the experiment is to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
+
+For the interruption tests there are three outcomes, at the first CZ the interruption can succeed or a thermal re-ignition can occur. Given a thermal re-ignition in the first CZ the current can be interrupted at the second CZ or another thermal re-ignition can occur. The end result have two outcomes: success or failure, explained by figure \ref{fig:pilSuccessOfFail}. Besides the outcomes listed there is a small chance of a dielectric re-ignition. However these are rare and are therefore not included. Experience has also shown that in practical interruption cases thermal re-ignitions are the most demanding tasks for load break switches in the 24 kV 630 A class \cite{bib:AFIMVLBA}. During testing of geometry \textit{b} at 630 A two re-ignitions occurred that was in the area between thermal and dielectric re-ignition, these was counted as thermal failures.
 
 \begin{figure}[H]
 \centering
@@ -554,7 +556,27 @@ In figure \ref{fig:CurrentAndVoltageWaveform} the current and voltage during a u
 \caption{Current and voltage waveforms near CZ for two different interruption outcomes \cite{bib:AFIMVLBA}.} \label{fig:CurrentAndVoltageWaveform}
 \end{figure}
 
-   
+In figure \ref{fig:successRate400A} the results form the 400 A test for geometry \textit{a} and \textit{b} is presented. The graph are produced with the results from appendix \ref{app:testResults400A}. Figure \ref{fig:successRate630A} points out the results from the two geometries at 630 A, and it is produced from the data in appendix \ref{app:testResults630A}. The data from the boundary regions, which is when the pin are between 25 mm to 35 mm and less than 5 mm away from the female contact, is removed form the data selection. Usually around five tests where done at each pressure level, and the total chance of interruption are represented as a point in the graph. The exact number of tests at each point is pointed out in the raw data in appendix \ref{app:testResults400A}. It should be noted that in the higher pressure levels only a few tests where done to see if the geometry was able to interrupt currents when the pin was inside the nozzle. Therefore higher variation is expected in the high pressure levels.  
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Bilder/Results/successRate400A.png}
+\caption{Interruption success rate for geomerty \textit{a} and \textit{b} at 400 A.} \label{fig:successRate400A}
+\end{figure}
+
+For the 400 A experiment, geometry \textit{b} performed a little better than geometry \textit{a}. Geometry \textit{b} manage to interrupt 100 \% of the tests at a pressure of 0.7 bar, while \textit{a} did this on 0.8 bar. However \textit{a} manage to interrupt 90 \% of the tests at 0.7 bar, resulting in a almost equal performance for both geometries at 400 A.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Bilder/Results/successRate630A.png}
+\caption{Interruption success rate for geomerty \textit{a} and \textit{b} at 630 A.} \label{fig:successRate630A}
+\end{figure}
+
+For the 630 A experiment, both geometries successfully interrupted 100 \% of the tests at 1.2 bar. However geometry \textit{a} was more stable and was more predictable for each pressure level than geometry \textit{b}. Geometry \textit{b} had more variation in the number of successful interruptions for each pressure level, the reason is discussed in section \ref{sec:durability} and the variation might have been due to the small dimension of the contact compared to the high amplitude of the current.
+
+Since only a limited amount of tests have been carried out at each pressure level it is important not to confuse the results presented in this sections as statistical proved limits. The results can be regarded as a tool to use in future experiments and may indicate a possible new test geometry. The results might indicate at what pressure level the geometry was able to interrupt or not, but high uncertainties are connected to the percent of successful interruptions and it should not be used as empirical evidence.
+
+The raw data presented in appendix \ref{app:rawData} are presented without alterations. The black line indicates the length of the nozzle and the boundary regions are illustrated with the grey areas. If several tests occurred at the same position in the nozzle, the marker indicating the result have been moved a bit to the side so that the number of tests at each pressure level is countable. For the 400 A experiment the position measurer was damaged and resulted in an inaccuracy of $\pm$ 2.5 mm for each result. In the 630 A experiment the the accuracy for the position is set to $\pm$ 1 mm.
 
 \subsection{Arcing voltage}
 
@@ -564,7 +586,7 @@ In figure \ref{fig:CurrentAndVoltageWaveform} the current and voltage during a u
 
 (For the 400 A tests for both geometries the distance meashurer was damage. Resulting in a bigger uncertanly to the pin position.
 
-\subsection{Durability of the arcing contacts}
+\subsection{Durability of the arcing contacts} \label{sec:durability}
 
 Due to harsh condition during the interruption process it is important that the different parts of the switch is able to tolerate the stress of an arc for several breaking operations and for at least two current zero crossings before the arc is extinguished. As briefly described in section \ref{sec:genDes} the arcing contacts in a LBS consists of different metals or composites designed to to withstand the stress from the arc. A common material for the arcing contact is a pseudo-alloy of copper and tungsten called copper-tungsten, this material is also used in the contact-set of the test switch. The main advantage of this pseudo-alloy is that it is able to conduct current quite well because of the good conductivity of the copper, however copper alone will evaporate if exposed to an arc. The tungsten have a high boiling point, and will not vaporise with the same speed as the copper, this makes the contacts more resistant to the stress of the arc. Of the two geometries tested there was a significant difference in the material durability in the male contact. In figure \ref{fig:unused_d3} a new unused male contact is displayed.
 
@@ -669,5 +691,35 @@ As illustrated in figure \ref{fig:used_d4_d3_female} the female contact for both
 \end{thebibliography}
 
 \appendix
-\section{Test Results}
+\section{Test Results} \label{app:rawData}
+\subsection{400 A geometry \textit{a} and \textit{b}} \label{app:testResults400A} 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Bilder/Results/rawData400AgeoA.png}
+\caption{Raw data for geometry \textit{a} at 400 A, The grey areas are the boundary region where results was discarded for the success rate graphs. The black line indicates where the length of the nozzle.} \label{fig:rawData400AgeoA}
+\end{figure}
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Bilder/Results/rawData400AgeoB.png}
+\caption{Raw data for geometry \textit{b} at 400 A, The grey areas are the boundary region where results was discarded for the success rate graphs. The black line indicates where the length of the nozzle.} \label{fig:rawData400AgeoA}
+\end{figure}
+\newpage
+
+\subsection{630 A geometry \textit{a} and \textit{b}} \label{app:testResults630A}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Bilder/Results/rawData630AgeoA.png}
+\caption{Raw data for geometry \textit{a} at 630 A, The grey areas are the boundary region where results was discarded for the success rate graphs. The black line indicates where the length of the nozzle.} \label{fig:rawData400AgeoA}
+\end{figure}
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Bilder/Results/rawData630AgeoB.png}
+\caption{Raw data for geometry \textit{b} at 630 A, The grey areas are the boundary region where results was discarded for the success rate graphs. The black line indicates where the length of the nozzle.} \label{fig:rawData400AgeoA}
+\end{figure}
+
+
 \end{document}
