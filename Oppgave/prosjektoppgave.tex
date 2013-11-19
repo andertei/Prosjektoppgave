@@ -445,7 +445,7 @@ In Norway, handling and leakage control of SF$_6$ is quite good, especially when
 Most of the information in section \ref{sec:Method} is collected from the article \textit{ "Air Flow Investigation for a Medium Voltage for a Medium Voltage Load Break Switch"} by N. S. Aanensen, E. Jonsson, and M. Runde \cite{bib:AFIMVLBA}.
 \newline
 
-\subsection{The Switch and Contact Geometry}
+\subsection{The Switch and Contact Geometry} \label{sec:switchAndContactGeo}
 This experiment is conducted using copper-tungsten arcing contacts, polytetraflourelthylene (PTFE) nozzles and air as interrupting medium. It is an open system, with the surrounding air at atmospheric pressure \textit{p$_0$} and a six litre tank with a pre-filled upstream overpressure \textit{p$_u$}, used during the interruption process to quench the arc. It is possible to adjust the upstream pressure, contact speed and position at current zero (CZ) independently, as well as the contact and nozzle geometry. The current and transient recovery voltage (TRV) can be change by changing the parameters of the laboratory test circuit.
 
 \begin{figure} [h]
@@ -592,15 +592,11 @@ Figure \ref{fig:arcingVoltage400A} displays the arcing voltage for geometry \tex
 \caption{Arcing voltage for geomerty \textit{a} at 630 A for different pressure levels.} \label{fig:arcingVoltage630A}
 \end{figure}
 
-\newpage
 
-\section{Discussion}
-
-(For the 400 A tests for both geometries the distance meashurer was damage. Resulting in a bigger uncertanly to the pin position.
 
 \subsection{Durability of the arcing contacts} \label{sec:durability}
 
-Due to harsh condition during the interruption process it is important that the different parts of the switch is able to tolerate the stress of an arc for several breaking operations and for at least two current zero crossings before the arc is extinguished. As briefly described in section \ref{sec:genDes} the arcing contacts in a LBS consists of different metals or composites designed to to withstand the stress from the arc. A common material for the arcing contact is a pseudo-alloy of copper and tungsten called copper-tungsten, this material is also used in the contact-set of the test switch. The main advantage of this pseudo-alloy is that it is able to conduct current quite well because of the good conductivity of the copper, however copper alone will evaporate if exposed to an arc. The tungsten have a high boiling point, and will not vaporise with the same speed as the copper, this makes the contacts more resistant to the stress of the arc. Of the two geometries tested there was a significant difference in the material durability in the male contact. In figure \ref{fig:unused_d3} a new unused male contact is displayed.
+Since the durability of the arcing contacts was fund to be dependent on the current amplitude some picture of the arcing contacts before and after use is displayed below. A new unused male contact is displayed in figure \ref{fig:unused_d3}.
 
 \begin{figure}[H]
 \centering
@@ -608,7 +604,7 @@ Due to harsh condition during the interruption process it is important that the 
 \caption{Unused male arcing contact of copper-tungsten.} \label{fig:unused_d3}
 \end{figure}
 
-For the low current test, with an RMS value of 400 A, both contact diameters handled the wear quite well. The pin that had a diameter of 4 mm was exposed to 82 interruptions. The same pin was also used at the high current test, with an RMS value of 630 A, and was exposed to 37 interruptions. The material in the pin handled this quite well, all though some sign of damage was observed this did not seem to have an impact on the interruption capabilities or mechanical strength of the pin. The pin after the tests is displayed in figure \ref{fig:d4_burn_side} and \ref{fig:d4_burn_top}. The pin was exposed to both successful and unsuccessful interruptions, therefore both short and long arcing times.
+For the low current test, with an RMS value of 400 A, both contact diameters handled the wear quite well. The pin that had a diameter of 4 mm was exposed to 82 interruptions. The same pin was also used at the high current test, with an RMS value of 630 A, and was exposed to 37 interruptions. The material in the pin handled this quite well, all though some sign of damage was observed this did not seem to have had an impact on the interruption capabilities or the mechanical strength of the pin. The pin after the tests is displayed in figure \ref{fig:d4_burn_side} and \ref{fig:d4_burn_top}. The pin was exposed to both successful and unsuccessful interruptions, therefore a mix of both short and long arcing times.
 
 \begin{figure}[H]
 \centering
@@ -626,9 +622,8 @@ For the low current test, with an RMS value of 400 A, both contact diameters han
 \end{minipage}
 \end{figure}
 
-The smallest geometry, with a diameter of 3 mm, handled the 400 A test in the same manner as the pin with a diameter of 4 mm. It had signs of wear, but did not needed to be changed during the test and its wear is not assumed to have had an impact on the test result.
+The smallest geometry, with a diameter of 3 mm, handled the 400 A test in the same manner as the pin with a diameter of 4 mm. It had signs of wear, but did not needed to be changed during the test and its wear is not assumed to have had an impact on the test result. The smallest geometry is displayed in figure \ref{fig:d3_burn_side} and \ref{fig:d3_burn_top}. This pin was used for five unsuccessful interruptions before it needed to be replaced.
 
-These results might indicate that a small amount of copper-tungsten is can be used in the arcing contacts in a commercial LBS, which is good to minimize costs. However it is highly dependent on the current amplitude, since the cross-section of the arc is highly dependent on the current magnitude. It is the cross-section and temperature of the arc that is assumed to have the biggest impact of the wear in the contact pins. The smallest geometry did not tolerate the high current test, and was severely damage fast. In figure \ref{fig:d3_burn_side} and \ref{fig:d3_burn_top} the smallest pin is displayed after just five unsuccessful interruptions. 
 
 \begin{figure}[H]
 \centering
@@ -646,7 +641,7 @@ These results might indicate that a small amount of copper-tungsten is can be us
 \end{minipage}
 \end{figure}
 
-Figure \ref{fig:d3_burn_top} illustrates that droplets of copper that have vaporised from the tip and condensed longer down on the pin. The tip of the pin is severely disfigured and only parts of the tungsten skeleton remains while most of the copper has vaporised from the pin. The results from this test have a lot more variation than the other tests and it might be partially due to the fast wear down of the pin. If the arcing time was low and the current was interrupted in the first CZ, the wear down of the contact was relatively low. It might therefore be possible to use this pin diameter if a quick interruption can be guaranteed. It should be noted that even if it is possible to successfully break the current several times without wearing down the pin, a small pin geometry might not be dielectric suitable, especially if air is used instead of SF$_6$. A small round shape might be to sharp and can result in a enhancement of the electrical field around the tip, giving a smaller breakdown voltage. This might give a problem with spark-overs when the switch is open, due to transients in the power grid, or it can result in a too long arcing time when closing the switch. Both incidents can be harmful to a fragile arcing contact and may shorten the lifetime of the LBS.
+Figure \ref{fig:d3_burn_top} illustrates that droplets of copper that have vaporised from the tip and condensed longer down on the pin. The tip of the pin is severely disfigured and only parts of the tungsten skeleton remains while most of the copper has vaporised from the pin. The results from this test have a lot more variation than the other tests and it might be partially due to the fast wear down of the pin.  
 
 
 \begin{figure}[H]
@@ -655,11 +650,26 @@ Figure \ref{fig:d3_burn_top} illustrates that droplets of copper that have vapor
 \caption{Used female arcing contact of copper-tungsten. \newline The one to the left has a diameter of 4 mm and the one to the right 3 mm.} \label{fig:used_d4_d3_female}
 \end{figure}
 
-As illustrated in figure \ref{fig:used_d4_d3_female} the female contact for both geometries have few signs of wear. Both female contacts were never replaced during the experiment, but was polished half way trough each test series to remove soot and other pollution that may have formed on them. The surface area which and arc can burn on is larger for the female contact than the male contact. This is probably the reason for the much higher durability in the female contact than the male contact.
+As illustrated in figure \ref{fig:used_d4_d3_female} the female contact for both geometries have few signs of wear. Non of the female contacts were replaced during the experiment, but was polished half way trough each test series to remove soot and other pollution that may have formed on them. The surface area which and arc can burn on is larger for the female contact than the male contact and might be the reason for the much higher durability in the female contact than the male contact.
+
+\newpage
+
+\section{Discussion}
+
  
 \subsection{arcing voltage and pressure}
 
 \subsection{air pressure, speed and volume flow}
+
+\subsection{Durability of the arcing contacts} 
+
+Due to harsh condition during the interruption process it is important that the different parts of the switch is able to tolerate the stress of an arc for several breaking operations and for at least two current zero crossings before the arc is extinguished. As briefly described in section \ref{sec:genDes} and \ref{sec:switchAndContactGeo} the arcing contacts in a LBS consists of different metals or composites designed to to withstand the stress from the arc. A common material for the arcing contact is a pseudo-alloy of copper and tungsten called copper-tungsten, this material is also used in the contact-set of the test switch. The main advantage of this pseudo-alloy is that it is able to conduct current quite well because of the good conductivity of the copper, however copper alone will evaporate if exposed to an arc. Tungsten have a high boiling point, and will not vaporise with the same speed as the copper, this makes the contacts more resistant to the stress of the arc. Of the two geometries tested there was a significant difference in the material durability in the male contact.
+
+The results presented in \ref{sec:durability} might indicate that a small amount of copper-tungsten can be used in the arcing contacts in a commercial LBS, which is good to minimize costs. However it is highly dependent on the current amplitude since the cross-section and temperature of the arc is highly dependent on the current magnitude. It is the cross-section and temperature of the arc that is assumed to have the biggest impact of the wear in the contact pins. 
+
+Geometry \textit{b} did not tolerate the high current test, and quickly degenerated as displayed in figure \ref{fig:d3_burn_side} and \ref{fig:d3_burn_top}. If figure \ref{fig:tempDist2} is consulted it might indicate that the temperature in the arc have a significant rise from the test with an current amplitude of 400 A to the tests with an amplitude of 630 A. However this increase in the arcs temperature will be experienced by both contact geometries and does not alone explain the significant difference in wear. But geometry \textit{b} will have a smaller surface area where the arc can move along and this difference combined with the increased arcing temperature might have resulted in a faster vaporisation of copper and degeneration of the male contact for geometry \textit{b}.
+
+Test where the current was interrupted every time was also done with geometry \textit{b}. The degeneration of the male contact was then slower and less severe. Therefore it might be argued that if a interruption can be guaranteed at the first CZ geometry \textit{b} might also be used to interrupt larger currents. But it should be noted that even if it is possible to successfully interrupt the current on a regular basis without wearing down the pin, a small pin geometry, like geometry \textit{b}, might not be dielectric suitable, especially if air is used instead of SF$_6$ as interrupting medium. A small round shape might be to sharp and can give an enhancement of the electrical field around the tip, resulting in partial discharges and a lower breakdown voltage for the design. This might give a problem with spark-overs when the switch is open, due to transients in the power grid, or result in a too long arcing time when closing the switch. Both incidents can be harmful to a fragile arcing contact and may shorten the lifetime of the LBS.
 \newpage
 \section{Conclusion}
 
