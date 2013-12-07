@@ -138,37 +138,6 @@ The self-blast, or third generation breaker, was developed with the goal of redu
 
 There are some disadvantages with the self-blast principle when compared to the puffer mechanism. The self-blast have a lower dielectric strength due to hot gas between the contacts after CZ. This gives a higher chance of re-ignition since hot gas has a lower ionisation energy than cold gas. The design also not well suited to break smaller currents. This is because the arc is less intense and therefore do not heat the gas sufficiently to create a strong enough blast. Therefore it is common to combine self-blast and puffer mechanism in a hybrid design, so that it can handle both small and large currents. A compact LBS design using air as interrupting medium will probably rely on a puffer design. This is because of the small current an LBS is usually facing compared to a circuit breaker.
 
-\subsection{Air flow considerations} \label{sec:AirFlow}
-\textit{ Most of the information in section \ref{sec:AirFlow} is collected from the article "Air Flow Investigation for a Medium Voltage Load Break Switch" by N. S. Aanensen, E. Jonsson, and M. Runde} \newline
-
-From Bernoulli's equation it can be deduced that the maximum velocity of the gas flow is obtained from a set pressure, \textit{p}, difference as given in equation \eqref{eq:Bernoulli}.
-
-\begin{equation} \label{eq:Bernoulli}
-v_{max}=\sqrt{ \frac{2 \Delta p}{\rho}}
-\end{equation}
-
-$\rho$ is the mass density of the fluid. The fluid is assumed to have an ideal flow without viscosity and incompressible behaviour. $v_{max}$ will occur on the narrowest part of the geometry. The velocity in the other parts of the nozzle is defined by a constant volumetric flow rate. The relation between volumetric flow rate \textit{Q} and $v_{max}$ is presented in equation \eqref{eq:flowRate}.
-
-\begin{equation} \label{eq:flowRate}
-Q=v_{\mathrm{max}} A_\mathrm{{contact}}
-\end{equation} 
-
-If table \ref{tab:contGeoPara} is consulted it indicates that the area $ A_\mathrm{{contact}}$ is smaller than both $A_\mathrm{{ring}}$ and $A_\mathrm{{nozzle}}$ for both geometries. This means that for the geometries in this experiment $v_\mathrm{{max}}$ is allays set by the area of the female contact and the gas velocity will be the same whenever the pin is inside or outside the nozzle because the volumetric flow is constant. The velocity of the gas flow in the nozzle is set by equation \eqref{eq:VolumetricFlow}.
-\begin{equation*}
-Q=v_\mathrm{{max}} A_\mathrm{{contact}} = v_\mathrm{{nozzle}} A_\mathrm{{nozzle}}
-\end{equation*}
-
-
-\begin{equation} \label{eq:VolumetricFlow}
-v_\mathrm{{nozzle}}= v_\mathrm{{max}}\frac{A_\mathrm{{contact}}}{A_\mathrm{{nozzle}} }= v_\mathrm{{max}} (\frac{d}{D})^2
-\end{equation} 
-
-$v_\mathrm{{nozzle}}$ is approximately the same for geometry \textit{a} and \textit{b} since the fraction $\frac{D}{d}$ form table \ref{tab:contGeoPara} is almost the same for both geometries. The volumetric flow rate will increase with the increasing geometry size according to A$_\mathrm{{contact}}$
-
-The deduction above is based on the assumption that the fluid is non-compressible and have a ideal flow without viscosity. This is probably not valid since turbulence, wall effects, variations in density and temperature are likely to be present. For pressure differences above 0.7 bar it is expected that sonic speeds can be reached by the gas flow. Simulations of compressible gas flows at ambient temperature have therefore been carried out by Nina Sasaki Aanensen, to verify that the two geometries in fact will have similar air flow velocity for equal upstream pressure and that the air flow velocity is approximately equal when the pin is inside and outside the nozzle. 
-
-It is safe to assume that an burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate. It is difficult to know exactly how an arc interacts with the gas flow and a good simulation tool for load currents is still to be obtained.
-
 %\subsubsection{Test switch}
 %A new medium voltage laboratory for load break switch development have been designed with the possibilities to vary important design parameters for a load break switch. When the industry develops switchgear technology they tend to alter several different parameters at the same time. For instance, if they wish to alter the speed of the airflow in a puffer LBS, they might increases the separation speed of the contacts, since these functions often are linked in a puffer design. This will also result in a higher pressure not only and not only a higher volumetric flow. This will make it hard to conclude which parameter that was the most critical for a successful interruption. Therefore a laboratory switch have been design where each of the different parameters can be adjusted without changing other critical parameter. This will make systematic researching possible and optimisation of certain designs criteria, like dimensions, will be a lot simpler.
 
@@ -441,6 +410,43 @@ In Norway, handling and leakage control of SF$_6$ is quite good, especially when
 
 \newpage
 
+\subsection{Air flow considerations} \label{sec:AirFlow}
+\textit{ Most of the information in section \ref{sec:AirFlow} is collected from the article "Air Flow Investigation for a Medium Voltage Load Break Switch" by N. S. Aanensen, E. Jonsson, and M. Runde} \newline
+
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.3]{Bilder/Method/areaSetUp.png}
+\caption{Overview over how the different areas and diameters are defined \cite{bib:AFIMVLBA}.} \label{fig:AreacontactAndNozzle}
+\end{figure}
+
+From Bernoulli's equation it can be deduced that the maximum velocity of the gas flow is obtained from a set pressure difference, $\Delta$\textit{p}, as given in equation \eqref{eq:Bernoulli}.
+
+\begin{equation} \label{eq:Bernoulli}
+v_{max}=\sqrt{ \frac{2 \Delta p}{\rho}}
+\end{equation}
+
+Where $\rho$ is the mass density of the fluid and the fluid is assumed to have an ideal flow without viscosity and incompressible behaviour. The velocity of the gas, $v_{max}$, will occur on the narrowest part of the geometry as indicated in figure \ref{fig:contactAndNozzle}. The velocity in the other parts of the nozzle can be calculated by the constant volumetric flow rate. The relation between volumetric flow rate \textit{Q} and $v_{max}$ is presented in equation \eqref{eq:flowRate}.
+
+\begin{equation} \label{eq:flowRate}
+Q=v_{\mathrm{max}} A_\mathrm{{contact}}
+\end{equation} 
+
+If table \ref{tab:contGeoPara} is consulted it indicates that the area $ A_\mathrm{{contact}}$ is smaller than both $A_\mathrm{{ring}}$ and $A_\mathrm{{nozzle}}$ for both geometries. This means that for the geometries in this experiment, $v_\mathrm{{max}}$ is allays set by the area of the female contact and the gas velocity will be the same whenever the pin is inside or outside the nozzle. This is because the volumetric flow is constant. The velocity of the gas that flows in the nozzle is set by equation \eqref{eq:VolumetricFlow}.
+\begin{equation*}
+Q=v_\mathrm{{max}} A_\mathrm{{contact}} = v_\mathrm{{nozzle}} A_\mathrm{{nozzle}}
+\end{equation*}
+
+
+\begin{equation} \label{eq:VolumetricFlow}
+v_\mathrm{{nozzle}}= v_\mathrm{{max}}\frac{A_\mathrm{{contact}}}{A_\mathrm{{nozzle}} }= v_\mathrm{{max}} (\frac{d}{D})^2
+\end{equation} 
+
+This indicates that $v_\mathrm{{nozzle}}$ is approximately the same for geometry \textit{a} and \textit{b} since the fraction $\frac{D}{d}$ form table \ref{tab:contGeoPara} is almost the same for both geometries. The volumetric flow rate will increase with the increasing geometry size according to A$_\mathrm{{contact}}$. For pressure differences above 0.7 bar it is expected that sonic speeds can be reached by the gas flow.
+
+The deduction above is based on the assumption that the fluid is non-compressible and have a ideal flow without viscosity. This is probably not valid since turbulence, wall effects, variations in density, and temperature are likely to be present. However these simplifications makes it possible to analyse the air flow in the geometries to a certain extent, and might give the possibility to explain the difference in interruption capabilities when the pin is inside or outside the nozzle. To verify that the assumptions above simulations of compressible gas flow at ambient temperature have been carried out by Nina Sasaki Aanensen. These verified that the two geometries in fact has similar air flow velocity at equal upstream pressure and that the air flow velocity is approximately equal when the pin is inside and outside the nozzle. However the impact of the arc has not been included in these simulations. It is safe to assume that an burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate. It is difficult to know exactly how an arc interacts with the gas flow and a good simulation tool for load currents is still to be obtained.
+
+\newpage
+
 \section{Method} \label{sec:Method}
 Most of the information in section \ref{sec:Method} is collected from the article \textit{ "Air Flow Investigation for a Medium Voltage for a Medium Voltage Load Break Switch"} by N. S. Aanensen, E. Jonsson, and M. Runde \cite{bib:AFIMVLBA}.
 \newline
@@ -450,8 +456,8 @@ This experiment is conducted using copper-tungsten arcing contacts, polytetraflo
 
 \begin{figure} [h]
 \centering
-\includegraphics[scale=0.3]{Bilder/Method/contactSetUp.png}
-\caption{The contact and nozzle. The diameter of the contact is \textit{d} and the inner diameter of the nozzle is \textit{D}  \cite{bib:AFIMVLBA}.} \label{fig:contactAndNozzle}
+\includegraphics[scale=0.3]{Bilder/Method/contactSetUpVmax2.png}
+\caption{The contact and nozzle. The diameter of the contact is \textit{d} and the inner diameter of the nozzle is \textit{D}.} \label{fig:contactAndNozzle}
 \end{figure}
 
 
@@ -471,12 +477,6 @@ b & 8 & 3 & 2.67 & 7.07 & 43.2 & 50.3 \\
 \end{tabular} 
 \label{tab:contGeoPara}
 \end{table}
-
-\begin{figure} [h]
-\centering
-\includegraphics[scale=0.3]{Bilder/Method/areaSetUp.png}
-\caption{Overview over how the different areas and diameters are defined \cite{bib:AFIMVLBA}.} \label{fig:AreacontactAndNozzle}
-\end{figure}
 
 The contact position \textit{x} is defined as the axial distance between the tulip and the pin contact. At starting position, \textit{x}= -60 mm, the pin contact is acting as a plug for the tank. This is making it possible to set on upstream pressure. The contact is hold in place by a electromagnet and is set to motion when the magnet releases the contact by a compressed spring. The spring accelerates the pin contact up to a speed of approximately 5.5 m/s at \textit{x}=0. At this position the spring is unloaded  and the pin moves with a constant speed until the contact is fully open at \textit{x}=110 mm.
 
