@@ -468,11 +468,11 @@ A simple drawing of the contact is displayed in figure \ref{fig:contactAndNozzle
 \caption{Contact geometry parameters}
  \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline 
-Geometry & D [mm] & d [mm] & $\frac{D}{d}$ & $A_{contact}$ [mm$^2$] & $A_{ring}$ [mm$^2$] & $A_{nozzle}$ [mm$^2$] \\ 
+Geometry & D [mm] & d [mm] & $\frac{D}{d}$ & $A_\mathrm{{contact}}$ [mm$^2$] & $A_\mathrm{{ring}}$ [mm$^2$] & $A_\mathrm{{nozzle}}$ [mm$^2$] \\ 
 \hline 
-a & 10.4 & 4 & 2.60 & 12.6 & 72.4 & 84.9 \\ 
+a & 10.4 & 4.0 & 2.60 & 12.6 & 72.4 & 84.9 \\ 
 \hline 
-b & 8 & 3 & 2.67 & 7.07 & 43.2 & 50.3 \\ 
+b & 8.0 & 3.0 & 2.67 & 7.1 & 43.2 & 50.3 \\ 
 \hline 
 \end{tabular} 
 \label{tab:contGeoPara}
@@ -701,12 +701,63 @@ Geometry \textit{b} did not tolerate the high current test, and quickly degenera
 Test where the current was interrupted every time was also done with geometry \textit{b}. The degeneration of the male contact was then slower and less severe. Therefore it might be argued that if a interruption can be guaranteed at the first CZ geometry \textit{b} might also be used to interrupt larger currents. But it should be noted that even if it is possible to successfully interrupt the current on a regular basis without wearing down the pin, a small pin geometry, like geometry \textit{b}, might not be dielectric suitable, especially if air is used instead of SF$_6$ as interrupting medium. A small round shape might be to sharp and can give an enhancement of the electrical field around the tip, resulting in partial discharges and a lower breakdown voltage for the design. This might give a problem with spark-overs when the switch is open, due to transients in the power grid, or result in a too long arcing time when closing the switch. Both incidents can be harmful to a fragile arcing contact and may shorten the lifetime of the LBS.
 \newpage
 \subsection{Suggestion for further work}
+\subsubsection{A nozzle that minimize arc impact on air flow}
+Even though the geometries was not able to interrupt the current when the pin was inside the nozzle it might seems reasonable to believe that the interruption capabilities should be the approximately equal when the air flow velocity and rate is kept constant. Since cold gas simulations have indicated that effects from turbulence, wall effects, variations in density, and temperature are limited it is possible to assume that the impact from the arc is considerable. To minimize this impact it is possible to make the geometries bigger, since the cross-section of the arc is dependent on the current. This will make the arc appearer smaller relative to the nozzle geometry, and its impact on the air flow might be limited. In table \ref{tab:contGeoParaNew} a suggestion to a new nozzle design, \textit{c}, is indicated and compared to the two tested geometries. If a bigger geometry with the same $\frac{D}{d}$ is tested it might be possible to know more from the impact of the arc on the air flow, and how the area behind the arc effects the chance for a successful interruption.
 
+\begin{table}[H]
+\center
+\caption{Contact geometry parameters}
+ \begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Geometry & D [mm] & d [mm] & $\frac{D}{d}$ & $A_\mathrm{{contact}}$ [mm$^2$] & $A_\mathrm{{ring}}$ [mm$^2$] & $A_\mathrm{{nozzle}}$ [mm$^2$] \\ 
+\hline 
+a & 10.4 & 4.0 & 2.60 & 12.6 & 72.4 & 84.9 \\ 
+\hline 
+b & 8.0 & 3.0 & 2.67 & 7.1 & 43.2 & 50.3 \\ 
+\hline 
+c & 13.0 & 5.0 & 2.60 & 19.6 & 113.1 & 132.7 \\ 
+\hline
+\end{tabular} 
+\label{tab:contGeoParaNew}
+\end{table}
 
+\subsubsection{Cone shaped nozzle}
+Since the area behind the arc may have an impact on the interruption chance it might be possible to gradually increase the area behind the arc with a cone shaped nozzle. If a cone shaped nozzle where to be developed it is possible to find the area behind the arc when the pin's position inside the nozzle is known and then compare it with the interruption success rate.
 
--increase the nozzle size so that the arc and wall effects becomes smaller
+A cone shaped nozzle is also considered to guide the air flow better for supersonic air velocities, and might improve the interruption chance for high upstream pressures. For the geometries tested in this experiment most of the successful interruptions occurred at supersonic speeds.
 
--nozzle with increasing diameter, so that the area behind the arc is considered bigger.
+If a cone shaped nozzle where to be developed it should be comparable to an already tested design, or a to be tested design. If it is designed so that $A_\mathrm{{contact}}$ is smaller than $A_\mathrm{{ring}}$ and $A_\mathrm{{nozzle}}$ it will ensure that the air flow rate and velocity are independent from the pin's position inside the nozzle. 
+
+\begin{table}[H]
+\center
+\caption{Contact geometry parameters for a cone design}
+ \begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Geometry & D$_\mathrm{{start}}$ [mm]& D$_\mathrm{{end}}$ [mm] & d [mm] & $\frac{D_\mathrm{{start}}}{d}$ & $A_\mathrm{{contact}}$ [mm$^2$] \\ 
+\hline 
+a & 10.4 & 14.0 & 4.0 & 2.60 & 12.6  \\ 
+\hline 
+b & 10.4 & 16.0 & 4.0 & 2.60 & 12.6  \\ 
+\hline 
+\end{tabular} 
+\label{tab:contGeoParaCone}
+\end{table}
+
+In table \ref{tab:contGeoParaCone} examples of two different contact geometries with a cone shaped nozzle is indicated. They both have the same length of 30 cm, and the same pin diameter of 4.0 mm. D$_\mathrm{{start}}$ represents the diameter at the start of the nozzle close to the female contact, while D$_\mathrm{{end}}$ is the diameter at the end of the nozzle. Since D$_\mathrm{{start}}$ is the same and D$_\mathrm{{end}}$ is different for the test geometries the results might illustrate the impact on current interruption from the different areas and increase in the area behind the arc. Which can be compared to the test results from geometry \textit{a} in this experiment, where the area behind the arc is equal no matter the pin's position inside the nozzle, and that there is no increase in the area. Figure \ref{fig:cone_D14} and \ref{fig:cone_D16} illustrates two cone shaped nozzle with the same  D$_\mathrm{{start}}$, but a different D$_\mathrm{{end}}$. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Bilder/Discussion/cone_D14.png}
+\caption{Nozzle shaped like a cone with D$_\mathrm{{end}}=$14 mm.} \label{fig:cone_D14}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Bilder/Discussion/cone_D16.png}
+\caption{Nozzle shaped like a cone with D$_\mathrm{{end}}=$16 mm.} \label{fig:cone_D16}
+\end{figure}
+
+\newpage
 
 \section{Conclusion}
 
