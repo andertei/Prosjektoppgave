@@ -10,9 +10,17 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{float}
 \usepackage{multirow}
+\usepackage{verbatim} %for å kommentere ut ting
 
+%ræl som trengs for bibliografi
+\usepackage{splitbib} %bibliografi seksjon
 %symbolliste
-
+\begin{category}[]{Periodicals}
+\SBentries{bib:SF6PI,bib:AFIMVLBA,bib:CIAMVLBS,bib:StatSF6,bib:CBAC,bib:IPSF6AQM,bib:TDCIGBB,bib:regSF6Miljo}
+\end{category}
+\begin{category}[]{Books}
+\SBentries{bib:HVEbreak,bib:KlimaKur2020,bib:TET4160HVIM,bib:THFD}
+\end{category}
 
 \usepackage{makeidx}
 \makeindex
@@ -25,12 +33,32 @@
 \maketitle
 %SummaryNyttige pdf-filer/SF6conduct.pdf
 \newpage
+
 \section*{Summary}
+
 \newpage
 \tableofcontents
 \newpage
+
 \section{Introduction}
-TA MED: This report describe some of the properties of an arc burning in atmospheric pressure or above. Arcs in vacuum behaves different, and will not be featured in this report.
+Upon till now SF$_6$ and vacuum based technology have been dominating the compact medium-voltage switchgear market. Air insulated switchgear does exists but they are space consuming and are not applicable for use in a compact substation design. A compact substation is one of the most common designs for substations in the medium-voltage level of the distribution system. Figure \ref{fig:compact substation} displays a compact substation which can be used in the medium-voltage distribution system. The switchgear is a module that can be detached from the substation and removed trough its front panel. As figure \ref{fig:compact substation} indicates there are a limited amount of space available for the switchgear. Therefore the main challenge for an air insulated switchgear design for this kind of application is set by the amount of space available in the compact substation.
+
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Bilder/Introduction/general_substation.jpg}
+\caption{Compact substation with open front panel \cite{bib:comSub}} \label{fig:compact substation}
+\end{figure}
+
+The main choice of interrupting media in switchgear has been SF$_6$ since its discovery in the 1960s. The gas exhibits many properties which is well suited for an isolation gas. It is highly electron negative which gives it good dielectric strength and arc-interrupting capabilities. The breakdown voltage of SF$_6$ is almost three times higher than air at atmospheric pressure \cite{bib:SF6PI}. It has excellent heat transfer properties as an interrupting medium and The gas also reforms itself when dissociated under the high temperature conditions in an electrical arc  \cite{bib:SF6PI}. SF$_6$ produces no carbon or other conductive deposits during arcing and it is also chemically compatible with most insulation materials and conductive materials \cite{bib:SF6PI}. The gas in its stable form is nontoxic, non-flammable and non-explosive. SF$_6$ based switchgear tends to be cheap to produce relative to other designs, and the gas itself is also affordable at today prices. However SF$_6$ is considered to be one of the strongest greenhouse gases and atmospheric releases from the power industries should be minimised. Therefore development of equipment using air instead of SF$_6$ is of interest in the industry.
+
+SF$_6$ based switchgear designs tends to work without putting to much effort in the design, this is due to the superior interruption capabilities of SF$_6$. Therefore little research have been done at the optimising of load break switches. To be able to develop air based compact switchgear strong demands is set on optimization to avoid usage of unnecessary space. Accordingly a test switch have been developed which allows adjustment of design parameter such as nozzle and contact geometry, contact movement speed and material, and upstream gas pressure. Previous results have indicated that most of the successful interruptions have occurred when the pin is outside the nozzle \cite{bib:CIAMVLBS}. This is probably because the pin is partially clogging the nozzle and resulting in a different air flow when the pin is inside and outside the nozzle. Cold air flow simulations done by Nina Sasaki Aanensen supports this theory and a nozzle design with the same air flow when the pin is inside or outside the nozzle have been developed. However the air flow ratio is smaller than previously tested designs, this gives a opportunity to test if a smaller volumetric air flow can be compensated by a increase in air velocity in the form of increased upstream pressure. Since the air flow velocity and rate is equal when the pin is inside or outside the nozzle it might result in equal interruption capabilities no matter the pins position in the nozzle. However it is assumed that the area behind the pin at the moment of interruption also have an impact on the interruption chance, hence this effect will also be tested. The contact geometries used in this test is quite small compared to previously tested materials and what is common to use in commercial available switches. Therefore the durability of the contacts will be discussed and compared to the different current magnitudes they are tested on. This might indicate if it is possible to use less material and thereby cut expenses.
+
+This report consists of a theory part where a typical designs of a load break switch is pointed out, the working mechanisms of the puffer design concept is also illustrated. Some of the properties of an electrical arc burning in a gas at atmospheric pressure or above is described in the theory section while arcs in vacuum behaves differently, and will not be featured in this report. The difference between air and SF$_6$ as an interrupting medium is discussed and some of the main challenges when using air is pointed out. Parts of the impact on atmospheric releases of SF$_6$ form load break switches in Norway is also presented in this section of the report. Then the air flow in the present contact geometries is analysed.
+
+In the method section the contact geometries and materials used in this experiment is illustrated. Further in the method section the test rig and procedure is explained and it is followed by the experimental results. Thee different results is presented, first the success rate for interruption is presented with regards to pressure. This part is followed by the arcing voltage at different upstream pressures and then the durability of the contacts is displayed mostly in from of pictures. The results are then discussed and the main points from the discussion is presented in the conclusion part of the report.
+
+\begin{comment}
+TA MED: This report 
 
 A load break switch should be able to interrupt currents less or equal the maximum load current in a distribution system. When interrupting a current the two contacts which a switch consists of start separating producing a gap between each other. Normally the current is not interrupted by this and an electrical arc ignites and burns in the contact gap \cite{bib:HVEbreak}. The arc consists of plasma, which is a mixture of negative and positive ions as well as electrons. Due to the energy dissipation produced by the arc the temperature in the plasma is very high. The electrical conductivity of the plasma channel is dependent of the temperature produced by the arc. When a high current is flowing it is almost a perfect conductor, but at low temperatures the conductivity is much poorer.
 
@@ -55,12 +83,11 @@ A test switch have been developed which allows adjustment of many design paramet
 
 Several different nozzle geometries are going to be tested and it is assumed that the chance for a successful current interruption inside the nozzle will be approximately the same as outside the nozzle. Since the size of the arc compared to the pin will vary between the different nozzle geometries and current amplitudes, a clogging effect is assumed to occur and might be revealed as an lower interruption success rate for certain geometries.
 
+\end{comment}
+
 \newpage
 
-
-\newpage
 \section{Theory}
-\newpage
 \subsection{Typical switchgear design and interruption sequence} \label{sec:genDes}
 Most of the information in section \ref{sec:genDes} is collected from \textit{"Current Interruption in Power Grids"} by Magne Runde \cite{bib:HVEbreak} \newline
 
@@ -97,7 +124,7 @@ u_{recovery}=u_{supply}-u_{load} \cite{bib:HVEbreak}
 
  This voltage is called the recovery voltage and is defined in equation \eqref{eq:U_rec}, where $u_{supply}$ is the voltage on the supply side and $U_{load}$ is the voltage on the load side of the open switch. If the recovery voltage is increasing too fast or have a high amplitude a re-ignition of the arc may occur. There is two different kinds of re-ignition: thermal and dielectric. Thermal re-ignition take place right after CZ, up to a few microseconds, and is mainly dependent on the recovery voltage's steepness. As the recovery voltage rises and a thermal re-ignition is avoided a dielectric re-ignition may occur. This kind of re-ignition is largely dependent on the amplitude of the recovery voltage. If no kind of arc quenching mechanism is used and the contacts is stationary, but open, the arc will re-ignite instantly after CZ, and the normal current sine-wave will be observed. The chance for re-ignition will not only be determinated by the recovery voltage, but also depend what kind of interrupting medium that is being used. Other factors like contact material, geometry, contact moment speed, and cooling mechanisms are also important.
 
-Plasma is generated when gas and metal vapour is heated to very high temperatures. At a certain point the molecules in the gas decomposes to ions and free electrons. This mixture is called plasma, and makes up most of the components in an electrical arc. The physical properties of an arc will be featured in section \ref{sec:sec:eleCondArc} and \ref{sec:HeatTransport}. 
+Plasma is generated when gas and metal vapour is heated to very high temperatures. At a certain point the molecules in the gas decomposes to ions and free electrons. This mixture is called plasma, and makes up most of the components in an electrical arc. The physical properties of an arc will be featured in section \ref{sec:eleCondArc} and \ref{sec:HeatTransport}. 
 
 
 In a LBS it is important to assure that the switch in closed position acts as a perfect conductor with a low contact resistance. Copper or aluminium is ideal materials and are often used to ensure that this aspect of the contact is met. Sometimes the contact surface is plated with tin, gold, silver or platinum to ensure an even lower contact resistance between the contact plates. The main problem with electrical losses in the switch is heat generation which may speed up metal creeping processes and other ageing related processes in the switch. Contact plates made out of aluminium are especially vulnerable to creeping.
@@ -179,7 +206,7 @@ There are some disadvantages with the self-blast principle when compared to the 
 %\end{equation} 
 
 %Where $u_{left}$ is the voltage on the left hand side of the breaker and $u_{right}$ is the voltage on the right hand side.
-
+\begin{comment}
 \subsubsection{Voltage drop in a static electric arc} \label{sec:elarcs}
 
 When working with arcs it is common to differentiate between dynamic and static arcs. The static arc is established during switching operations in a DC power system after the transient phenomenas have faded out. An dynamic arc is an arc that occurs in AC power systems and during the transient part of a DC interruption, or when the cooling of the arc varies with time, like in most puffer designs. Even though all arcs in an AC system is to be regarded as dynamic arcs, it is possible to regard them as static during a short period of time \cite{bib:HVEbreak}.
@@ -209,7 +236,7 @@ This relationship is illustrated in figure \ref{fig:potDisArc}.
 \end{figure}
 
 For short arcs the voltage drop will mostly occur close to the cathode, and some what at the anode. In longer arcs more of the voltage drop will occur in the arc column itself.
-
+\end{comment}
 \subsubsection{Electrical conductivity in an arc} \label{sec:eleCondArc}
 Gasses have the ability to be perfect isolators as well as good conductors, mainly depending on the gas temperature. This is due to charged particles and electrons created by dissociation of the molecules in the gas. Air is a mixture of several gasses but might be simplified to consist mostly of nitrogen (N$_2$). In figure \ref{fig:condAir} the conductivity of air can be observed.   
 
@@ -764,27 +791,31 @@ In table \ref{tab:contGeoParaCone} examples of two different contact geometries 
 \newpage
 \begin{thebibliography}{10}
 
+\bibitem{bib:CIAMVLBS} \textit{E. Jonsson, N. S. Aanensen and M. Runde}, "\textit{Current Interruption in Air for a Medium Voltage Load Break Switch}", \textit{IEEE Trans. Power Delivery}, to be published.
+
+\bibitem{bib:AFIMVLBA} \textit{N. S. Aanensen, E. Jonsson, and M. Runde}, "\textit{Air Flow Investigation for a Medium Voltage Load Break Switch}", \textit{IEEE Trans. Power Delivery}, to be published.
+
+\bibitem{bib:CBAC} \textit{W. Rieder}, "\textit{Circuit breakers, Physical and engineering problems, III-Arc-medium considerations}", \textit{IEEE spectrum, pp. 80-84}, Sept. 1970.
 
 \bibitem{bib:HVEbreak} \textit{M. Runde}, \textit{Current Interruption in Power Grids}. Trondheim: Norwegian University of Science and Technology, 2013
 
 \bibitem{bib:SF6PI} \textit{L.G. Christophorou, J. K. Olthoff, and R.J. Van Brunt}, "\textit{Sulfur Hexafluoride and the Electric Power Industry}", \textit{IEEE Electrical Insulation Magazine, vol. 13, No. 5, pp. 20-24}, Oct. 1997.
 
+\bibitem{bib:StatSF6} \textit{K. L. Hansen}, "\textit{Emissions from consumption of HFCs, PFCs and SF$_6$ in Norway}", \textit{Statistics Norway/Department of Economic Statistics/Environmental Statistics
+}, 2007.
+
 \bibitem{bib:comSub} \textit{amesimpex.com}, \url{http://www.amesimpex.com/images/unitised_sub_002.jpg}, \textit{26.9.2013}
 
-\bibitem{bib:CIAMVLBS} \textit{E. Jonsson, N. S. Aanensen and M. Runde}, "\textit{Current Interruption in Air for a Medium Voltage Load Break Switch}", \textit{IEEE Trans. Power Delivery}, to be published.
 
 \bibitem{bib:KlimaKur2020} "\textit{KLIMAKUR2020}", Oslo: Klima- og forurensningsdirektoratet, 2010
 
-\bibitem{bib:CBAC} \textit{W. Rieder}, "\textit{Circuit breakers, Physical and engineering problems, III-Arc-medium considerations}", \textit{IEEE spectrum, pp. 80-84}, Sept. 1970.
 
-\bibitem{bib:IPSF6AQM} \textit{W. Hertz, H. Motschmann and H. Wittel}, "\textit{Investigations o the Properties of SF$_6$ as an Arc Quenching Medium}", \textit{Proceedings of The IEEE, vol. 59, NO. 4, pp. 485-492}, April 1971.
+\bibitem{bib:IPSF6AQM} \textit{W. Hertz, H. Motschmann and H. Wittel}, "\textit{Investigations of the Properties of SF$_6$ as an Arc Quenching Medium}", \textit{Proceedings of The IEEE, vol. 59, NO. 4, pp. 485-492}, April 1971.
 
 \bibitem{bib:TDCIGBB} \textit{W. Hermann}, "\textit{THEORETICAL DESCRIPTION OF THE CURRENT INTERRUPTION IN HV GAS BLAST BREAKERS}", \textit{IEEE Transactions on Power Apparatus and System, vol. PAS-96, NO. 5, pp. 1546-1555}, Sept./ Oct. 1977.
 
 \bibitem{bib:consSF6} \textit{esrl.noaa.gov}, \url{http://www.esrl.noaa.gov/gmd/webdata/iadv/ccgg/graphs/pdfs/ccgg.MLO.sf6.1.none.discrete.all.pdf}, \textit{17.10.2013}
 
-\bibitem{bib:StatSF6} \textit{K. L. Hansen}, "\textit{Emissions from consumption of HFCs, PFCs and SF$_6$ in Norway}", \textit{Statistics Norway/Department of Economic Statistics/Environmental Statistics
-}, 2007.
 
 \bibitem{bib:regSF6Miljo} \textit{regjeringen.no}, \url{http://www.regjeringen.no/nb/dep/md/dok/regpubl/stmeld/2011-2012/meld-st-21-2011-2012/5/5.html?id=682932}, \textit{21.10.2013}
 
@@ -795,8 +826,6 @@ In table \ref{tab:contGeoParaCone} examples of two different contact geometries 
 
 \bibitem{bib:THFD} \textit{R. W. Johnson}, "\textit{The Handbook of FLUID DYNAMICS}", \textit{Heidelberg: Springer-Verlag GmbH \& Co. KG
 }, 1998.
-
-\bibitem{bib:AFIMVLBA} \textit{N. S. Aanensen, E. Jonsson, and M. Runde}, "\textit{Air Flow Investigation for a Medium Voltage Load Break Switch}", \textit{IEEE Trans. Power Delivery}, to be published.
 
 \end{thebibliography}
 
