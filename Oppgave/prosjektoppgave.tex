@@ -57,7 +57,7 @@ SF$_6$ based switchgear designs tends to work without putting to much effort in 
 
 This report consists of a theory part where a typical designs of a load break switch is pointed out, the working mechanisms of the puffer design concept is also illustrated. Some of the properties of an electrical arc burning in a gas at atmospheric pressure or above is described in the theory section while arcs in vacuum behaves differently, and will not be featured in this report. The difference between air and SF$_6$ as an interrupting medium is discussed and some of the main challenges when using air is pointed out. Parts of the impact on atmospheric releases of SF$_6$ form load break switches in Norway is also presented in this section of the report. Then the air flow in the present contact geometries is analysed.
 
-In the method section the contact geometries and materials used in this experiment is illustrated. Further in the method section the test rig and procedure is explained and it is followed by the experimental results. Thee different results is presented, first the success rate for interruption is presented with regards to pressure. This part is followed by the arcing voltage at different upstream pressures and then the durability of the contacts is displayed mostly in from of pictures. The results are then discussed and the main points from the discussion is presented in the conclusion part of the report.
+In the method section the contact geometries and materials used in this experiment is illustrated. Further in the method section the test rig and procedure is explained and it is followed by the experimental results. Thee different results is presented, first the success rate for interruption is presented with regards to pressure. This part is followed by the arcing voltage at different upstream pressures and then the durability of the contacts is displayed mostly in from of pictures. The results are then discussed and the main points from the discussion is presented in the conclusion part of the report. In the appendix the raw data from the interruption test is graphically presented followed by a section about previous relevant research. This section is used to discuss the interruption chance in the light of results from previously conducted experiments.
 
 \begin{comment}
 TA MED: This report 
@@ -563,7 +563,7 @@ The pressure level step is 0.1 bar for all tests and at least three pressure lev
 The pin is cleaned, polished, and greased between each test to ensure a smooth surface. The contacts and nozzle are replaced regularly to avoid contact wear and nozzle deformation. This is to ensure that the geometry is constant through the whole experiment.
 
 \section{Results}
-\subsection{Interruption experiment}
+\subsection{Interruption chance} \label{sec:interChance}
 Originally the intention with the experiments was to test if an equal air flow velocity when the pin was inside or outside the nozzle in the moment of interruption resulted in a equal interruption success rate. However this hypothesis was dismissed since the results from the initial testing indicated that the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore the test procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption test was done at the relevant pressure levels outside the nozzle as described in section \ref{sec:procedure}. The goal with the experiment is to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
 
 For the interruption tests there are four outcomes, at the first CZ the interruption can succeed or a thermal re-ignition can occur. Given a thermal re-ignition in the first CZ the current can be interrupted at the second CZ or another thermal re-ignition can occur. The end result have two outcomes: success or failure. The outcomes is explained by figure \ref{fig:pilSuccessOfFail}. Besides the outcomes listed, there is a small chance of a dielectric re-ignition. However these are rare and are therefore not included. Experience has also shown that in practical interruption cases thermal re-ignitions are the most demanding tasks for load break switches in the 24 kV 630 A class \cite{bib:AFIMVLBA}. During testing of geometry \textit{b} at 630 A two re-ignitions occurred that was in the area between thermal and dielectric re-ignition, these was counted as thermal failures.
@@ -685,10 +685,30 @@ As illustrated in figure \ref{fig:used_d4_d3_female} the female contact for both
 \newpage
 
 \section{Discussion}
+\subsection{Interruption chance} \label{sec:DiscIntChan}
+When analysing the results presented in section \ref{sec:interChance} it is important link them to past experiments. A short summary of previous experimental results is presented in appendix \ref{app:PrevReleEx}, and should be consulted when reading this part.
 
- 
-\subsection{Interruptions successrate bla bla}
-area behind arc
+Previous tests have indicated that a nozzle with a small diameter and short length should be chosen. This is because a too wide nozzle may lead to a slow air velocity and may case the air flow to pass around the arc. However a too narrow nozzle might cause the arc to clog the nozzle, thus preventing an efficient flow of air. The nozzle chosen for this experiment is for geometry \textit{a} 10.4 mm and geometry \textit{b} 8 mm, which is quite large when compared to previously tested geometries. Therefore it is expected that the current geometries should perform poorer than the test results presented in figure \ref{fig:resultsCIMALBS}.
+
+In figure \ref{fig:ninaBryt} it can be observed that if the diameter of the pin is reduced, higher pressures is needed to perform a successful interruption when the pin is outside the nozzle. This is due to the volume flow which is limited by the smallest cross-section of the contact geometry which is $A_\mathrm{{contact}}$ when the pin is outside the nozzle for all previous tests and for the geometries tested in this experiment it limiting no matter the pins position. For the tested geometries $A_\mathrm{{contact}}$ has a diameter of 4 mm for geometry \textit{a} and 3 mm for geometry \textit{b}. Hence it is possible to presume that it should handle poorer than previously tested geometries.
+
+The results form the 400 A interruption test is indicated in figure \ref{fig:successRate400A}. It states that geometry \textit{b} interrupted 100 \% of the tests at 0.7 bar upstream pressure, while geometry \textit{a} interrupted 100 \% of the tests at 0.8 bar upstream pressure. This is strange considering that geometry \textit{a} have a bigger $A_\mathrm{{contact}}$ than geometry \textit{b} resulting in a bigger air flow. However geometry \textit{a} have a bigger nozzle diameter than geometry \textit{b} and might explain that the increase in volume flow of air from geometry \textit{b} to \textit{a} do not result in a improved interruption chance, since the air flow might not be efficiently guided on the arc at 0.7 bar. It should be noted the difference in success rate against upstream pressure cannot be considered significant, since the interruption results for geometry \textit{a} at 0.7 bar was 90 \%. At a upstream pressure of 0.6 bar geometry \textit{a} interrupted close to 80 \% of the test, while geometry \textit{b} interrupted 20 \%. This can implicate that it exist a certain level for each geometry where a sufficient amount of volume flow of air is obtained, while the guiding capabilities of the nozzle is less important.
+
+If equation \eqref{eq:Bernoulli} and \eqref{eq:flowRate} is combined the relationship presented in equation \eqref{eq:flowRateprop} is obtained.
+
+\begin{equation} \label{eq:flowRateprop}
+Q \\ \alpha \\ \sqrt{2\Delta p} A_{contact}
+\end{equation}
+
+This clearly states that the volume flow will be larger for geometry \textit{a} than geometry \textit{b}. If the test results is compared to the results from \ref{fig:ninaBryt} it follows the same trend as obtained from that experiment. At a current of 400 A the smallest geometry, which had a contact diameter of 6 mm, in figure \ref{fig:ninaBryt} interrupted all the tests successfully at 0.35 bar upstream pressure, in equation \ref{eq:combiGeo} this geometry is  compared to geometry \textit{a} at 100 \% success rate based on the difference in volume flow with equation \eqref{eq:flowRateprop}.
+
+\begin{equation} \label{eq:combiGeo}
+\frac{Q_{d=6 mm, 100 \%}}{Q_{d=4 mm, 100 \%}}=\frac{\sqrt{2\Delta p_{100 \%}} A_{contact, d=6 mm}}{\sqrt{2\Delta p_{100 \%}} A_{contact, d=4 mm}}
+\end{equation}
+
+With numbers inserted it results in a ratio of $\frac{Q_{d=6 mm, 100 \%}}{Q_{d=4 mm, 100 \%}}=1.48$. Which means that geometry \textit{a} uses approximately 1.5 times less air than a previously tested design. With use of equation \eqref{eq:Bernoulli} the ratio of the maximum air velocity in the contact geometry can be obtained as $\frac{v_{max, d=6 mm}}{v_{max, d=4 mm}}=2.51$. This means that geometry \textit{a} compensates for the 1.5 times smaller air flow with a 2.5 times higher speed of the air flow compared to the smallest contact geometry in figure \ref{fig:ninaBryt}. However the poorer performance of the geometries tested in this experiment is probably not just due to lower volume flow of air, but also might be because of a slower air velocity inside the nozzle.
+
+%Skriv det som er tegnet med rosa i kladdeboka 
 
 \subsection{Arcing Voltage considerations}
 The results presented in figure \ref{fig:arcingVoltage400A} and \ref{fig:arcingVoltage630A} illustrates the arcing voltage during failed interruption tests inside the nozzle at 400 A and 630 A at different upstream pressures. Since each line represents one test uncertainties are connected to these results, but general trends might be pointed out.
@@ -697,7 +717,7 @@ For each experiment the light blue line represents the lowest tested pressure an
 
 When the current has a high magnitude the arcing voltage is approximately the same and constant throughout the whole power cycle, except at the moment the current approaches CZ. An increase in arcing voltage can be observed at this moment and the arcing voltage starts to rise towards its amplitude. A difference in arcing voltage between the two pressure levels can be observed within this time span. For the low pressure test the arcing voltage starts to rise at the same time as the voltage for the high pressure test, but the amplitudes of the arcing voltage is different. In the low pressure test the arcing voltage have a smaller amplitude than the high pressure test. It is assumed that the reason for this increase in arcing voltage with increasing pressure is probably due to how the air flow cools down the arc.
 
-As described in section \ref{sec:HeatTransport} in figure \ref{fig:tempDist1} it is hard to cool the arc's core with an air flow, since the temperature in the core is mainly dependent on the current. However as the current approaches zero the temperature in the core will decrease, as well as the electrical conductivity of the core which is indicated in figure \ref{fig:condAir}. The air flow influence the temperature around the arc with cooling of region two and three in figure \ref{fig:tempDist1}. These regions contains energy in the form of heat, and acts as an energy bank for the core of the arc. When cooling with low pressure, the energy stored in these regions is not transported away from the arc as efficient as when cooling with a high pressure. Even though this difference in stored energy has little impact on the temperature in the arc when the current is at high magnitudes it is possible to assume that this energy is important for the temperature in the arc's core when the current is close to CZ, and heating from the current magnitude is less important. If a small amount of energy is stored in the arcs surroundings as in a high pressure test, the transaction from conducting to non-conducting occurs fast. Since the current is mostly controlled by the load side, the change in conductivity will not alter the current magnitude and therefore a the raise and amplitude of the arcing voltage will change with the conductivity of the arc. This is probably the reason for the steeper raise and higher amplitude of the arcing voltage for the high pressure test.
+As described in section \ref{sec:HeatTransport} in figure \ref{fig:tempDist1} it is hard to cool the arc's core with an air flow, since the temperature in the core is mainly dependent on the current. However as the current approaches zero the temperature in the core will decrease, as well as the electrical conductivity of the core which is indicated in figure \ref{fig:condAir}. The air flow influence the temperature around the arc with cooling of region two and three in figure \ref{fig:tempDist1}. These regions contains energy in the form of heat, and acts as an energy bank for the core of the arc. When cooling with low pressure, the energy stored in these regions is not transported away from the arc as efficient as when cooling with a high pressure. Even though this difference in stored energy has little impact on the temperature in the arc when the current is at high magnitudes it is possible to assume that this energy is important for the temperature in the arc's core when the current is close to CZ, and heating from the current magnitude is less important. If a small amount of energy is stored in the arc's surroundings as in a high pressure test, the transaction from conducting to non-conducting occurs fast. Since the current is mostly controlled by the load side, the change in conductivity will not alter the current magnitude and therefore a the raise and amplitude of the arcing voltage will change with the conductivity of the arc. This is probably the reason for the steeper raise and higher amplitude of the arcing voltage for the high pressure test.
 
 When regarding the impact on arcing voltage form different currents the results are harder to analyse. The arcing voltage seems unaltered and no major change can be observed from the 400 A test and the 630 A test. It might be reasonable to assume that a smaller arcing voltage is expected for higher currents due to a increase in temperature in the arc core. However due to rising temperature; energy losses from radiation and other factors increases when interrupting in air as mention in section \ref{sec:HeatTransport}, therefore the relationship between arcing voltage and increased current is not easily pointed out. Since the product of current and electrical conductivity determinates the arcing voltage, and the conductivity is highly dependent on the temperature, while the temperature is dependent on the current as well as the thermal conductivity of the gas, it is hard to predict the arcing voltage form one current level to another.
 
@@ -835,9 +855,6 @@ In table \ref{tab:contGeoParaCone} examples of two different contact geometries 
 \begin{center}
 \huge Appendix
 \end{center}
-\begin{center}
-\huge Test Results
-\end{center}
 \endgroup
 \vspace*{\fill}
 \appendix
@@ -845,6 +862,11 @@ In table \ref{tab:contGeoParaCone} examples of two different contact geometries 
 \setcounter{figure}{0}
 \makeatletter 
 \renewcommand{\thefigure}{A.\@arabic\c@figure}
+\makeatother
+
+\setcounter{table}{0}
+\makeatletter 
+\renewcommand{\thetable}{A.\@arabic\c@table}
 \makeatother
 
 \subsection{400 A geometry \textit{a} and \textit{b}} \label{app:testResults400A} 
@@ -876,5 +898,81 @@ In table \ref{tab:contGeoParaCone} examples of two different contact geometries 
 \caption{Raw data for geometry \textit{b} at 630 A, The grey areas are the boundary region where results was discarded for the success rate graphs. The black line indicates where the length of the nozzle.} \label{fig:rawData400AgeoA}
 \end{figure}
 
+\newpage
+\section{Appendix: Previous relevant experiment} \label{app:PrevReleEx}
+\makeatletter 
+\renewcommand{\thefigure}{B.\@arabic\c@figure}
+\makeatother
+
+\makeatletter 
+\renewcommand{\thetable}{B.\@arabic\c@table}
+\makeatother
+
+When investigating the interruption chance as in section \ref{sec:DiscIntChan} for the geometries presented in table \ref{tab:contGeoPara} it should be compared to the results obtained from past experiments. In the article "Current Interruption in Air for a Medium Voltage Load Break Switch" \cite{bib:CIAMVLBS} five geometries was tested. They all had the same diameter for the contact pin, but different length and nozzle diameter as indicated in table \ref{tab:contactParaMVALBS}.
+\begin{table} [H]
+\center
+\caption{Geometry parameters tested in:"Current Interruption in Air for a Medium Voltage Load Break Switch"}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Geometry: & 1 & 2 & 3 & 4 & 5 \\ 
+\hline 
+D [mm] & 8 & 9 & 9 & 9 & 10 \\ 
+\hline 
+L [mm] & 30 & 15 & 30 & 60 & 30 \\ 
+\hline 
+d [mm] & 6 & 6 & 6 & 6 & 6 \\ 
+\hline 
+\end{tabular}
+\label{tab:contactParaMVALBS}
+\end{table}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.6]{Bilder/Discussion/paraDefine.png}
+	\caption{Illustration of how the different parameters are defined  \cite{bib:CIAMVLBS}.}
+	\label{fig:paraDefMVALBS}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{Bilder/Discussion/percentSuccMVLBS.png}
+  \caption{Percentage of successful interruptions as a function of the upstream pressure for all test series \cite{bib:CIAMVLBS}.}
+  \label{fig:resultsCIMALBS}
+\end{figure}
+
+In figure \ref{fig:resultsCIMALBS} it can be observed that a short nozzle with a small diameter is preferred to obtain the lowest pressure for a series of successful interruptions. Besides the results from the article mentioned above results from the article "Air Flow Investigation for a Medium Voltage Load Break Switch" \cite{bib:AFIMVLBA} should also be consulted, since the contact geometries used here have similarities to the ones used in the experiment conducted in this paper. The length of the nozzle was the same in this experiment, but both the pin and nozzle diameter was altered so that the ratio between them is approximately the same for all three geometries. If equation \eqref{eq:VolumetricFlow} is consulted it indicates that that the air velocity is the same for all three geometries. However the air velocity will depend the pins position, and it will be different from when it is inside or outside the nozzle. If compared to the geometries used in this paper the fraction $\frac{D}{d}$ is smaller, resulting in a smaller air velocity. In table \ref{tab:NinasGeo} the dimensions of the contact geometry for this experiment is presented and the results from the interruption test for all three currents and geometries, when the first CZ occurred outside the nozzle is illustrated in figure \ref{fig:ninaBryt}, where the magnitude of the current is illustrated with the thickness of the line and the diameter of the contacts is illustrated with a larger symbol.
+
+\begin{table}[H]
+\center
+\caption{Geometry parameters tested in:"Air Flow Investigation for a Medium Voltage Load Break Switch"}
+ \begin{tabular}{|c|c|c|c|c|}
+\hline 
+Geometry & D [mm] & d [mm] & $\frac{D}{d}$ & $\frac{A_\mathrm{{contact}}}{A_\mathrm{{contact,a}}}$ \\ 
+\hline 
+a & 8 & 6 & 1.33 & 1 \\ 
+\hline 
+b & 11 & 8 & 1.38 & 1.8 \\ 
+\hline 
+c & 13.6 & 10 & 1.36 & 2.8 \\ 
+\hline 
+\end{tabular} 
+\label{tab:NinasGeo}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.4]{Bilder/Discussion/ninaResults.png}
+  \caption{Percentage of successful interruptions as a function of the upstream pressure for all test series \cite{bib:AFIMVLBA}.}
+  \label{fig:ninaBryt}
+\end{figure}
+
+It should be noted that the test series presented in figure \ref{fig:ninaBryt} only counted a successful interruption if the interruption occurred at the first CZ. For the results from the experiment conducted in this paper as presented in \ref{sec:interChance} a successful interruption was defined as a interruption at the first or second CZ. This might result in a higher success rate, however most of the interruptions occurred at the first CZ if they succeeded and therefore the results is comparable with the results presented in figure \ref{fig:ninaBryt}. In figure \ref{fig:ninaBryt2} the interruption results for the different geometries when CZ occurred inside the nozzle is indicated.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.26]{Bilder/Discussion/testResultsNinaInside.png}
+  \caption{Percentage of successful interruptions as a function upstream pressure for the different geometries when CZ occurs inside or outside the nozzle \cite{bib:AFIMVLBA}.}
+  \label{fig:ninaBryt2}
+\end{figure}
 
 \end{document}
