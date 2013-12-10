@@ -6,10 +6,12 @@
 %y = -r;
 %surf(x,y,z)
 
-r = 1.4;
-h = 30.0;
+%bytte r=16 og kjør en gang til for å lagre bilde
+
+r = 14.;
+h = 30;
 m = h/r;
-[R,A] = meshgrid(linspace(1.04,r,11),linspace(0,2*pi,41));
+[R,A] = meshgrid(linspace(10.4,r,11),linspace(0,2*pi,41));
 Z = R .* cos(A);
 Y = R .* sin(A);
 X = m*R;
