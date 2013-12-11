@@ -8,7 +8,7 @@
 
 %bytte r=16 og kjør en gang til for å lagre bilde
 
-r = 14.;
+r = 16;
 h = 30;
 m = h/r;
 [R,A] = meshgrid(linspace(10.4,r,11),linspace(0,2*pi,41));
