@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article} 
+\documentclass[10pt,a4paper,twoside]{article} 
 \usepackage[latin1]{inputenc}
 \usepackage[english]{babel}
 \usepackage{amsmath}
@@ -32,15 +32,93 @@
 
 
 \begin{document}
-\maketitle
+    \begin{titlepage}
+    \begin{center}
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    Anders Dall'Osso Teigset \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\{\large \bfseries
+    MEDIUM VOLTAGE LOAD BREAK SWITCH WITH AIR AS INTERRUPTING MEDIUM\\
+    }
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    {\large
+    Specialization project\\
+    }
+    \ \\
+    {December, 2013 \\}
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+   	{\large
+   Norwegian University of Science and Technology\\
+   Department of Electric Power Engineering\\
+    }
+   	\ \\
+    \ \\
+    \ \\
+    \ \\
+    \end{center}
+    \end{titlepage}
+
+%\maketitle
 %SummaryNyttige pdf-filer/SF6conduct.pdf
-\newpage
+\thispagestyle{empty}
+\cleardoublepage
 
 \section*{Summary}
+\setcounter{page}{1}
+\pagenumbering{roman}
 
-\newpage
+In this paper the difference between air and SF$_6$ as an interruption gas have been pointed out. SF$_6$ have several advantages over air, like electron negativity and a good thermal conductivity. However SF$_6$ is a strong greenhouse gas and the atmospheric releases of SF$_6$ is mostly from the electrical power industry. But replacing SF$_6$ based medium voltage switchgear with air based ones will not have a big impact on emissions in Norway. However the impact on atmospheric releases is assumed to be better in markets where SF$_6$ have lesser regulations.
+
+If SF$_6$ is going to be exchanged with air in compact load break switches optimisation of important interruption parameters most be done. This paper have found out that it might be possible to compensate for a small volume flow on air through the nozzle with an high velocity of the flow. For the chosen nozzle geometries the flow rate and speed was the same regardless of the pin was inside or outside the nozzle at the moment of interruption. However this did not result in an equal interruption rate inside and outside the nozzle, since non interruptions inside the nozzle where obtained.
+
+Further in the paper the impact on arcing voltage at different currents and upstream pressures are investigated and a connection between a higher upstream pressure and a increase in arcing voltage peak is pointed out.
+
+During current interruption stress from the electrical arc might wear down the contacts, and the impact from this have been documented. It was found that the contacts handled this quite well, exept for the smallest pin contact at the 630 A test which quickly degenerated.
+
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic}
 \tableofcontents
-\newpage
+\cleardoublepage
 
 \section{Introduction}
 The main choice of interrupting media in switchgear has been SF$_6$ since its discovery in the 1960s. The gas exhibits many properties which is well suited for an isolation gas. It is highly electron negative which gives it good dielectric strength and arc-interrupting capabilities. The breakdown voltage of SF$_6$ is almost three times higher than air at atmospheric pressure \cite{bib:SF6PI}. It has excellent heat transfer properties as an interrupting medium and The gas also reforms itself when dissociated under the high temperature conditions in an electrical arc  \cite{bib:SF6PI}. SF$_6$ produces no carbon or other conductive deposits during arcing and it is also chemically compatible with most insulation materials and conductive materials \cite{bib:SF6PI}. The gas in its stable form is nontoxic, non-flammable and non-explosive. SF$_6$ based switchgear tends to be cheap to produce relative to other designs, and the gas itself is also affordable at today prices. However SF$_6$ is considered to be one of the strongest greenhouse gases and atmospheric releases from the power industries should be minimised. Therefore development of equipment using air instead of SF$_6$ is of interest in the industry.
@@ -89,7 +167,7 @@ Several different nozzle geometries are going to be tested and it is assumed tha
 
 \end{comment}
 
-\newpage
+\cleardoublepage
 
 \section{Theory}
 \subsection{Typical switchgear design and interruption sequence} \label{sec:genDes}
@@ -196,7 +274,7 @@ There are some disadvantages with the self-blast principle when compared to the 
 
 %It is expected that b2 and c2 will need a higher pressure than b1 and c1 to perform a successful interruption, due to the lower airflow. However it is expected that they will have an equal successrate no matter if the pin is inside the nozzle or outside the nozzle.
 
-\newpage
+\cleardoublepage
 \subsection{Interrupting currents} 
 %\subsubsection{Phenomenological description of a typical current interruption} \label{sec:InterruptCurrent}
 %A interrupting sequence in an AC power system follows a typical pattern. During normal service the contacts are closed and current is flowing through the switchgear without electrical losses. When a command signal to interrupt the current is sent to the breakers driving mechanism the contacts are set to motion. A gap opens between them and is filled with an interrupting medium. An arc usually forms between the contacts and the current continues to flow trough the breaker. This arc mainly consists of plasma which is composed of electrons and other charge carriers like positive and negative ions. Due to energy dissipation in the arc the temperature in the plasma is generally high, but strongly dependent on the amplitude of the electrical current passing through the breaker \cite{bib:HVEbreak}. The system load is the main factor when assessing the electrical current flow through the breaker, the effect from the arcing voltage is often disregarded. Because of the limited time span when assessing breaking operations the sinus curve of the current at a given time is needed to be taken account for. Plasma with an high temperature tends to have a higher electric conductivity than plasma with an lower temperature. Electrical conductivity in an plasma channel is also strongly depend on the medium the plasma is burning in, the difference between air and SF${_6}$ will be discussed in section \ref{sec:airandsf}.
@@ -439,7 +517,7 @@ Since only half of the SF$_6$ bank in medium voltage switchgear is regulated thr
 
 In Norway, handling and leakage control of SF$_6$ is quite good, especially when compared to some other countries. Therefore it can be argued that the biggest reduction in SF$_6$ emissions will be in other countries where SF$_6$ is not regulated in the same manner. However, this reduction depends on air-bases equipment being made available and taken to use. To make this happen it is important that air-based LBSes is equally good or better than its SF$_6$ counterpart to interrupt currents. It must also be economicly feasible regarding lifetime, productions, and maintenance costs. Some kind of international agreement to reduce SF$_6$ emissions might also make the air-based breaker more economicly feasible on the global market. With this in mind, it is possible to assume that the global SF$_6$ emissions will be reduced if a competitive air-based LBS is developed.
 
-\newpage
+\cleardoublepage
 
 \section{Method} \label{sec:Method}
 
@@ -566,6 +644,7 @@ This indicates that $v_\mathrm{{nozzle}}$ is approximately the same for geometry
 
 The deduction above is based on the assumption that the fluid is non-compressible and have a ideal flow without viscosity. This is probably not valid since turbulence, wall effects, variations in density, and temperature are likely to be present. However these simplifications makes it possible to analyse the air flow in the geometries to a certain extent, and might give the possibility to explain the difference in interruption capabilities when the pin is inside or outside the nozzle. To verify that the assumptions above simulations of compressible gas flow at ambient temperature have been carried out by Nina Sasaki Aanensen. These verified that the two geometries in fact has similar air flow velocity at equal upstream pressure and that the air flow velocity is approximately equal when the pin is inside and outside the nozzle. However the impact of the arc has not been included in these simulations. It is safe to assume that an burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate.
 
+\cleardoublepage
 \section{Results}
 \subsection{Interruption chance} \label{sec:interChance}
 Originally the one of the intention with the experiments was to test if an equal air flow velocity when the pin was inside or outside the nozzle in the moment of interruption resulted in a equal interruption success rate. However this hypothesis was dismissed since the results from the initial testing indicated that the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore the test procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption test was done at the relevant pressure levels outside the nozzle as described in section \ref{sec:procedure}. The goal with the experiment is to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
@@ -608,7 +687,7 @@ Since only a limited amount of tests have been carried out at each pressure leve
 
 The raw data presented in appendix \ref{app:rawData} are presented without alterations. The black line indicates the length of the nozzle and the boundary regions are illustrated with the grey areas. If several tests occurred at the same position in the nozzle, the marker indicating the result have been moved a bit to the side so that the number of tests at each pressure level is countable. For the 400 A experiment the position measurer was damaged and resulted in an inaccuracy of $\pm$ 2.5 mm for each result. In the 630 A experiment the the accuracy for the position is set to $\pm$ 1 mm.
 
-\newpage
+\cleardoublepage
 \subsection{Arcing voltage}
 During the experiments the arcing voltage have been monitored and is presented below in figure \ref{fig:arcingVoltage400A} and \ref{fig:arcingVoltage630A}. Each graph illustrates the arcing voltage at a failed interruption when the pin was inside the nozzle at a given pressure. Voltage is indicated along the y-axis and the x-axis indicates time. When CZ occurs the voltages changes polarities and what was before the arcing voltage becomes the TRV. Each voltage plot is shifted along the x-axis a bit so that it is possible to spot the difference between them.
 
@@ -686,7 +765,7 @@ Figure \ref{fig:d3_burn_top} illustrates that droplets of copper that have vapor
 
 As illustrated in figure \ref{fig:used_d4_d3_female} the tulip contact for both geometries have few signs of wear. Non of the tulip contacts were replaced during the experiment, but was polished half way trough each test series to remove soot and other pollution that may have formed on them. The surface area which and arc can burn on is larger for the tulip contact than the pin contact and might be the reason for the much higher durability in the tulip contact than the pin contact.
 
-\newpage
+\cleardoublepage
 
 \section{Discussion}
 \subsection{Interruption chance} \label{sec:DiscIntChan}
@@ -815,7 +894,7 @@ In table \ref{tab:contGeoParaCone} examples of two different contact geometries 
 \caption{Nozzle shaped like a cone.} \label{fig:cone_D16}
 \end{figure}
 
-\newpage
+\cleardoublepage
 
 \section{Conclusion}
 Interruption tests where carried out for the two geometries \textit{a} and \textit{b} at different upstream pressures and resulted in the following:
@@ -827,7 +906,7 @@ Interruption tests where carried out for the two geometries \textit{a} and \text
 \item Both the pin contacts tolerated the 400 A interruption test quite well. Geometry \textit{a} handled the 630 A test without significant wear, but the pin contact in geometry \textit{b} was quickly degenerated. However it is possible that if interruptions can be guaranteed at the first CZ the pin contact for geometry \textit{b} might be used at 630 A. The tulip contact for both geometries had non significant signs of wear during the experiment.
 \end{itemize}
 
-\newpage
+\cleardoublepage
 \begin{thebibliography}{10}
 \bibitem{bib:SF6PI} L.G. Christophorou, J. K. Olthoff, and R.J. Van Brunt, "Sulfur hexafluoride and the electric power industry", \textit{IEEE Electrical Insulation Magazine, vol. 13, No. 5, pp. 20-24}, Oct. 1997.
 
@@ -853,13 +932,13 @@ Interruption tests where carried out for the two geometries \textit{a} and \text
 
 \bibitem{bib:StatSF6} K. L. Hansen, "Emissions from consumption of HFCs, PFCs and SF$_6$ in Norway", \textit{Statistics Norway/Department of Economic Statistics/Environmental Statistics}, 2007.
 
-\bibitem{bib:AFIMVLBA} N. S. Aanensen, E. Jonsson, and M. Runde "Air flow investigation for a medium voltage load break switch", \textit{IEEE Trans. Power Delivery}, to be published.
+\bibitem{bib:AFIMVLBA} N. S. Aanensen, E. Jonsson, and M. Runde "Air flow investigation for a medium voltage load break switch", to be published.
 
-\bibitem{bib:CIAMVLBS} E. Jonsson, N. S. Aanensen and M. Runde, "Current interruption in air for a medium voltage load break switch", \textit{IEEE Trans. Power Delivery}, to be published.
+\bibitem{bib:CIAMVLBS} E. Jonsson, N. S. Aanensen and M. Runde, "Current interruption in air for a medium voltage load break switch", \textit{IEEE Trans. Power Delivery}, in press.
 
 \end{thebibliography}
 
-\newpage
+\cleardoublepage
 \vspace*{\fill}
 \begingroup
 \begin{center}
@@ -908,7 +987,7 @@ Interruption tests where carried out for the two geometries \textit{a} and \text
 \caption{Raw data for geometry \textit{b} at 630 A, The grey areas are the boundary region where results was discarded for the success rate graphs. The black line indicates where the length of the nozzle.} \label{fig:rawData630AgeoB}
 \end{figure}
 
-\newpage
+\cleardoublepage
 \section{Appendix: Previous relevant experiment} \label{app:PrevReleEx}
 \makeatletter 
 \renewcommand{\thefigure}{B.\@arabic\c@figure}
