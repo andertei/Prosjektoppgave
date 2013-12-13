@@ -12,6 +12,8 @@
 \usepackage{multirow}
 \usepackage{verbatim} %for å kommentere ut ting
 
+\raggedbottom
+
 %ræl som trengs for bibliografi
 %\usepackage{splitbib} %bibliografi seksjon
 
@@ -53,7 +55,7 @@
     \ \\
     \ \\
     {\large
-    Specialization project\\
+    Specialisation project\\
     }
     \ \\
     {December, 2013 \\}
@@ -126,7 +128,7 @@ The main choice of interrupting media in switchgear has been SF$_6$ since its di
 \begin{figure} [h]
 \centering
 \includegraphics[scale=0.5]{Bilder/Introduction/general_substation.jpg}
-\caption{Compact substation with open front panel \cite{bib:comSub}} \label{fig:compact substation}
+\caption{Compact substation with open front panel \cite{bib:comSub}.} \label{fig:compact substation}
 \end{figure}
 
 Upon till now SF$_6$ and vacuum based technology have been dominating the compact medium-voltage switchgear market. Air insulated switchgear does exists but they are space consuming and are not applicable for use in a compact substation design. A compact substation is one of the most common designs for substations in the medium-voltage level of the distribution system. Figure \ref{fig:compact substation} displays a compact substation which can be used in the medium-voltage distribution system. The switchgear is a module that can be detached from the substation and removed trough its front panel. As figure \ref{fig:compact substation} indicates there are a limited amount of space available for the switchgear. Therefore the main challenge for an air insulated switchgear design for this kind of application is set by the amount of space available in the compact substation.
@@ -228,7 +230,7 @@ The puffer mechanism is based on a piston to generate a gas flow in the switchge
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.8]{Bilder/Theory/CircutBreakPuff1.png}
-\caption{Interruption sequence in a puffer breaker \cite{bib:HVEbreak}} \label{fig:CircutBreakPuff1}
+\caption{Interruption sequence in a breaker using the puffer mechanism \cite{bib:HVEbreak}.} \label{fig:CircutBreakPuff1}
 \end{figure}
 
 When the breaker is closed as seen in figure \ref{fig:CircutBreakPuff1}a there is a gas volume \textit{(V)} trapped between the piston \textit{(P)} and the arcing contact \textit{(8)} and \textit{(6)}. At the moment the movable part of the arcing contact \textit{(8)} is pulled down the volume decreases because of the fixed piston and an increase in pressure due to compression of the gas occurs. Figure \ref{fig:CircutBreakPuff1}b illustrate that the main contact is open, and that the current now only flows through the arcing contact.
@@ -239,8 +241,8 @@ The gas flow is partially dependent on the cross-section of the arc, which again
  
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{Bilder/Theory/selfBlast.png}
-\caption{Expulsion chamber in a breaker using the self-blast mechanism \cite{bib:CBAC}} \label{fig:selfBlast}
+\includegraphics[scale=0.5]{Bilder/Theory/selfBlast.png}
+\caption{Expulsion chamber in a breaker using the self-blast mechanism \cite{bib:CBAC}.} \label{fig:selfBlast}
 \end{figure}
 
 The self-blast, or third generation breaker, was developed with the goal of reducing mechanical power of the operating system, making it cheaper and less complex. Figure \ref{fig:selfBlast} illustrates the working principle of a breaker using self-blast to interrupt an arc. The difference between self-blast and puffer mechanism is that the puffer mechanism increases the pressure by reducing the volume. Rather than the self-blast design which have a constant volume relying on a raise in temperature to increase the gas pressure \cite{bib:CBAC}. The self-blast design uses the heat generated from an arc burning between the arcing contacts to interrupt the current. The gas expands as it is heated by the burning arc, this increase in pressure leads to a gas flow on the arc, which cools it down leading to the quenching of it.
@@ -521,13 +523,13 @@ In Norway, handling and leakage control of SF$_6$ is quite good, especially when
 
 \section{Method} \label{sec:Method}
 
-\subsection{The Switch and Contact Geometry} \label{sec:switchAndContactGeo}
+\subsection{The switch and contact geometry} \label{sec:switchAndContactGeo}
 This experiment is conducted using copper-tungsten arcing contacts, polytetraflourelthylene (PTFE) nozzles and air as interrupting medium. It is an open system, with the surrounding air at atmospheric pressure \textit{p$_0$} and a six litre tank with a pre-filled upstream overpressure \textit{p$_u$}, used during the interruption process to quench the arc. It is possible to adjust the upstream pressure, contact speed and position at current zero (CZ) independently, as well as the contact and nozzle geometry. The current and transient recovery voltage (TRV) can be change by changing the parameters of the laboratory test circuit.
 
 \begin{figure} [h]
 \centering
 \includegraphics[scale=0.3]{Bilder/Method/contactSetUpVmax2.png}
-\caption{The contact and nozzle. The diameter of the contact is \textit{d} and the inner diameter of the nozzle is \textit{D}.} \label{fig:contactAndNozzle}
+\caption{The contact and nozzle. The diameter of the contact is \textit{d} and the inner diameter of the nozzle is \textit{D}. $\Delta p$ indicate the pressure difference.} \label{fig:contactAndNozzle}
 \end{figure}
 
 
@@ -535,7 +537,7 @@ A simple drawing of the contact is displayed in figure \ref{fig:contactAndNozzle
 
 \begin{table}[H]
 \center
-\caption{Contact geometry parameters}
+\caption{Contact geometry parameters.}
  \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline 
 Geometry & D [mm] & d [mm] & $\frac{D}{d}$ & $A_\mathrm{{contact}}$ [mm$^2$] & $A_\mathrm{{ring}}$ [mm$^2$] & $A_\mathrm{{nozzle}}$ [mm$^2$] \\ 
@@ -570,7 +572,7 @@ Figure \ref{fig:testCurcuit} is the laboratory test circuit used for the interru
 
 \begin{table}[H]
 \center
-\caption{Circuit Parameters and Resulting Current \cite{bib:AFIMVLBA} }
+\caption{Circuit Parameters and Resulting Current \cite{bib:AFIMVLBA}. }
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline 
 L$_s$ [mH] & L$_1$ [mH] & R$_1$ [$\Omega$] & C [nF] & R$_{d}$ [$\Omega$] & I [A] \\ 
@@ -645,8 +647,9 @@ This indicates that $v_\mathrm{{nozzle}}$ is approximately the same for geometry
 The deduction above is based on the assumption that the fluid is non-compressible and have a ideal flow without viscosity. This is probably not valid since turbulence, wall effects, variations in density, and temperature are likely to be present. However these simplifications makes it possible to analyse the air flow in the geometries to a certain extent, and might give the possibility to explain the difference in interruption capabilities when the pin is inside or outside the nozzle. To verify that the assumptions above simulations of compressible gas flow at ambient temperature have been carried out by Nina Sasaki Aanensen. These verified that the two geometries in fact has similar air flow velocity at equal upstream pressure and that the air flow velocity is approximately equal when the pin is inside and outside the nozzle. However the impact of the arc has not been included in these simulations. It is safe to assume that an burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate.
 
 \cleardoublepage
+
 \section{Results}
-\subsection{Interruption chance} \label{sec:interChance}
+\subsection{Interruption tests} \label{sec:interChance}
 Originally the one of the intention with the experiments was to test if an equal air flow velocity when the pin was inside or outside the nozzle in the moment of interruption resulted in a equal interruption success rate. However this hypothesis was dismissed since the results from the initial testing indicated that the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore the test procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption test was done at the relevant pressure levels outside the nozzle as described in section \ref{sec:procedure}. The goal with the experiment is to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
 
 For the interruption tests there are four outcomes, at the first CZ the interruption can succeed or a thermal re-ignition can occur. Given a thermal re-ignition in the first CZ the current can be interrupted at the second CZ or another thermal re-ignition can occur. The end result have two outcomes: success or failure. The outcomes are explained by figure \ref{fig:pilSuccessOfFail}. Besides the outcomes listed, there is a small chance of a dielectric re-ignition. However these are rare and are therefore not included. Experience has also shown that in practical interruption cases thermal re-ignitions are the most demanding tasks for load break switches in the 24 kV 630 A class \cite{bib:AFIMVLBA}. During testing of geometry \textit{b} at 630 A two re-ignitions occurred that was in the area between thermal and dielectric re-ignition, these was counted as thermal failures.
@@ -687,7 +690,6 @@ Since only a limited amount of tests have been carried out at each pressure leve
 
 The raw data presented in appendix \ref{app:rawData} are presented without alterations. The black line indicates the length of the nozzle and the boundary regions are illustrated with the grey areas. If several tests occurred at the same position in the nozzle, the marker indicating the result have been moved a bit to the side so that the number of tests at each pressure level is countable. For the 400 A experiment the position measurer was damaged and resulted in an inaccuracy of $\pm$ 2.5 mm for each result. In the 630 A experiment the the accuracy for the position is set to $\pm$ 1 mm.
 
-\cleardoublepage
 \subsection{Arcing voltage}
 During the experiments the arcing voltage have been monitored and is presented below in figure \ref{fig:arcingVoltage400A} and \ref{fig:arcingVoltage630A}. Each graph illustrates the arcing voltage at a failed interruption when the pin was inside the nozzle at a given pressure. Voltage is indicated along the y-axis and the x-axis indicates time. When CZ occurs the voltages changes polarities and what was before the arcing voltage becomes the TRV. Each voltage plot is shifted along the x-axis a bit so that it is possible to spot the difference between them.
 
@@ -705,8 +707,6 @@ Figure \ref{fig:arcingVoltage400A} displays the arcing voltage for geometry \tex
 \caption{Arcing voltage for geomerty \textit{a} at 630 A for different pressure levels.} \label{fig:arcingVoltage630A}
 \end{figure}
 
-
-\newpage
 \subsection{Durability of the arcing contacts} \label{sec:durability}
 
 Since the durability of the arcing contacts was found to be dependent on the current amplitude some picture of the arcing contacts before and after use is displayed below. A new unused pin contact is displayed in figure \ref{fig:unused_d3}.
@@ -803,7 +803,7 @@ Since blowing with approximately the same air volume, more speed and using a big
 
 If the results from the 630 A test in figure \ref{fig:successRate630A} is consulted it can be observed that the pressures to obtain more than 50 \% successful interruptions is above 0.7 bar and as expected higher than for the 400 A test. However this means that the air velocity are in the sonic speed range. As mentioned before both the nozzle and the equations applied is no longer valid. Therefore this results will not be analysed in the same way as the results form figure \ref{fig:successRate400A}. However successful interruptions was obtained when increasing the pressure, which might indicate that when increasing the air velocity it can compensate for the lack of volume flow. Still no interruptions was obtained when the pin was inside the nozzle for this current range either. Geometry \textit{b} is still some what better than geometry \textit{a}, but have a faster decline in success rate when the pressure drops. This is the same behaviour as in the 400 A test. If geometry \textit{b} is observed a fall in the interruption chance from 1 bar to 1.1 bar is present. This confirms the trend that high variations is connected with the results obtained through this experiment. The drop at 1.1 bar occurred for reasons unknown, if figure \ref{fig:rawData630AgeoB} is can be observed that 10 test where performed on this pressure. The first five tests where performed and all succeeded. Then as explained in section \ref{sec:procedure} the pressured was lowered to 1.0 bar. However the success rate dropped to 70 \%, this was a unexpected drop and five new test where performed on 1.1 bar where all the tests failed. The pressure was then increased and all the interruptions succeeded. It is assumed that the drop was a result of natural variations, however it is possible that the drop occurred due to damage contacts. The contacts was closely monitored during the rest of the experiments, this is discussed further in section \ref{fig:durability}.
 
-\subsection{Arcing Voltage considerations}
+\subsection{Arcing voltage considerations}
 The results presented in figure \ref{fig:arcingVoltage400A} and \ref{fig:arcingVoltage630A} illustrates the arcing voltage during failed interruption tests inside the nozzle at 400 A and 630 A at different upstream pressures. Since each line represents one test, uncertainties are connected to these results, but general trends are pointed out below.
 
 For each experiment the light blue line represents the lowest tested pressure and the orange line represent the highest tested pressure, respectably 0.6 bar and 2.0 bar upstream pressure. The results discussed below are based on a comparison between the highest pressure and lowest pressure. Although some variations can be observed from pressure level to pressure level, both current tests have approximately equal results and little difference can be observed between each current experiments.
@@ -844,7 +844,7 @@ Geometry \textit{b} did not tolerate the high current test, and quickly degenera
 Test where the current was interrupted every time was also done with geometry \textit{b}. The degeneration of the pin contact was then slower and less severe. Therefore it might be argued that if a interruption can be guaranteed at the first CZ geometry \textit{b} might also be used to interrupt larger currents. But it should be noted that even if it is possible to successfully interrupt the current on a regular basis without wearing down the pin, a small pin geometry, like geometry \textit{b}, might not be dielectric suitable, especially if air is used instead of SF$_6$ as interrupting medium. A small round shape might be to sharp and can give an enhancement of the electrical field around the tip, resulting in partial discharges and a lower breakdown voltage for the switch design. This might give a problem with spark-overs when the switch is open, due to transients in the power grid, or result in a too long arcing time when closing the switch. Both incidents can be harmful to a fragile arcing contact and may shorten the lifetime of the LBS.
 \newpage
 \subsection{Suggestion for further work}
-\subsubsection{A nozzle that minimize arc impact on air flow}
+\subsubsection{A nozzle that minimizes arc impact on air flow}
 Even though non of the geometries was able to interrupt the current when the pin was inside the nozzle, it might seems reasonable to believe that the interruption capabilities should be the approximately equal when the air flow velocity and rate is kept constant no matter the pin's position. Since cold gas simulations have indicated that effects from turbulence, wall effects, variations in density, and temperature are limited it is possible to assume that the impact from the arc is considerable. To minimize this impact it is possible to make the geometries bigger, since the cross-section of the arc is dependent on the current. This will make the arc appearer smaller relative to the nozzle geometry, and its impact on the air flow might be limited. In table \ref{tab:contGeoParaNew} a suggestion to a new nozzle design, \textit{c}, is presented and compared to the two tested geometries. If a bigger geometry with the same $\frac{D}{d}$ is tested it might be possible to know more from the impact of the arc on the air flow, and how the area behind the arc effects the chance for a successful interruption.
 
 \begin{table}[H]
@@ -886,7 +886,7 @@ b & 10.4 & 16.0 & 4.0 & 2.60 & 12.6  \\
 \label{tab:contGeoParaCone}
 \end{table}
 
-In table \ref{tab:contGeoParaCone} examples of two different contact geometries with a cone shaped nozzle is indicated. They both have the same length of 30 mm, and the same pin diameter of 4.0 mm. D$_\mathrm{{start}}$ represents the diameter at the start of the nozzle close to the tulip contact, while D$_\mathrm{{end}}$ is the diameter at the end of the nozzle. Since D$_\mathrm{{start}}$ is the same and D$_\mathrm{{end}}$ is different for the test geometries the results might illustrate the impact on current interruption from the different areas and increase in the area behind the arc. Which can be compared to the test results from geometry \textit{a} in this experiment, where the area behind the arc is equal no matter the pin's position inside the nozzle, and that there is no increase in the area. Figure \ref{fig:cone_D14} and \ref{fig:cone_D16} illustrates two cone shaped nozzle with the same  D$_\mathrm{{start}}$, but a different D$_\mathrm{{end}}$. 
+In table \ref{tab:contGeoParaCone} examples of two different contact geometries with a cone shaped nozzle is indicated. They both have the same length of 30 mm, and the same pin diameter of 4.0 mm. D$_\mathrm{{start}}$ represents the diameter at the start of the nozzle close to the tulip contact, while D$_\mathrm{{end}}$ is the diameter at the end of the nozzle. Since D$_\mathrm{{start}}$ is the same and D$_\mathrm{{end}}$ is different for the test geometries the results might illustrate the impact on current interruption from the different areas and increase in the area behind the arc. Which can be compared to the test results from geometry \textit{a} in this experiment, where the area behind the arc is equal no matter the pin's position inside the nozzle, and that there is no increase in the area. Figure \ref{fig:cone_D16} illustrates a cone shaped nozzle with the same  D$_\mathrm{{start}}$, but a different D$_\mathrm{{end}}$. 
 
 \begin{figure}[H]
 \centering
