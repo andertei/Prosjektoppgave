@@ -526,7 +526,7 @@ In Norway, handling and leakage control of SF$_6$ is quite good, especially when
 
 \subsection{The switch and contact geometry} \label{sec:switchAndContactGeo}
 
-This experiment is conducted using copper-tungsten arcing contacts, polytetraflourelthylene (PTFE) nozzles and air as interrupting medium. It is an open system, with the surrounding air at atmospheric pressure \textit{p$_0$} and a six litre tank with a pre-filled upstream overpressure \textit{p$_u$}, used during the interruption process to quench the arc. It is possible to adjust the upstream pressure, contact speed and position at current zero (CZ) independently, as well as the contact and nozzle geometry. The current and transient recovery voltage (TRV) can be change by changing the parameters of the laboratory test circuit.
+This experiment is conducted using copper-tungsten arcing contacts, polytetraflourelthylene (PTFE) nozzles, and air as interrupting medium. It is an open system, with the surrounding air at atmospheric pressure \textit{p$_0$} and a six-litre tank with a pre-filled upstream overpressure \textit{p$_u$}, used during the interruption process to quench the arc. It is possible to adjust the upstream pressure, contact speed, and position at current zero (CZ) independently, as well as the contact and nozzle geometry. The current and transient recovery voltage (TRV) can be change by changing the parameters of the laboratory test circuit.
 
 \begin{figure} [h]
 \centering
@@ -552,7 +552,7 @@ b & 8.0 & 3.0 & 2.67 & 7.1 & 43.2 & 50.3 \\
 \label{tab:contGeoPara}
 \end{table}
 
-The contact position \textit{x} is defined as the axial distance between the tulip and the pin contact. At starting position, \textit{x}= -60 mm, the pin contact is acting as a plug for the tank. This is making it possible to set on upstream pressure. The contact is hold in place by a electromagnet and is set to motion when the magnet releases the contact by a compressed spring. The spring accelerates the pin contact up to a speed of approximately 5.5 m/s at \textit{x}=0. At this position the spring is unloaded  and the pin moves with a constant speed until the contact is fully open at \textit{x}=110 mm.
+The contact position \textit{x} is defined as the axial distance between the tulip and the pin contact. At starting position, \textit{x}= -60 mm, the pin contact is acting as a plug for the tank. This is making it possible to pre-set an upstream pressure. The contact is held in place by an electromagnet and is set to motion when the magnet releases the contact with a compressed spring. The spring accelerates the pin contact up to a speed of approximately 5.5 m/s at \textit{x}=0. At this position, the spring is unloaded and the pin moves with a constant speed until the contact is fully open at \textit{x}=110 mm.
 
 \begin{figure} [H]
 \centering
@@ -569,14 +569,14 @@ The contact position \textit{x} is defined as the axial distance between the tul
 \caption{Circuit used for the interruption test \cite{bib:AFIMVLBA}.} \label{fig:testCurcuit}
 \end{figure}
 
-Figure \ref{fig:testCurcuit} is the laboratory test circuit used for the interruption test and supplies 50 Hz / 13.8 kV . It is possible to shape the TRV with tuning the parameters: L$_1$, L$_s$, R$_1$, R$_d$ and C. The systems short circuit parameters are R$_{sc}$ and L$_{sc}$. The TRV generated during interruption is set to simulate the standard for a 24 kV / 630 A class from the International Electrotechnical Commission (IEC) which corresponds to:
+Figure \ref{fig:testCurcuit} is the laboratory test circuit used for the interruption test and supplies 50 Hz / 13.8 kV . It is possible to shape the TRV by tuning the parameters: L$_1$, L$_s$, R$_1$, R$_d$, and C. The systems' short circuit parameters are R$_{sc}$ and L$_{sc}$. The TRV generated during interruption is set to simulate the standard for a 24 kV / 630 A class from the International Electrotechnical Commission (IEC), which corresponds to:
 
 \begin{itemize}
 \item The initial part of the TRV has a rate of rise in recovery voltage (RRRV) of 71 - 73 V / $\mu$s.
 	\begin{itemize}
 		\item voltage difference is measured over the first 20 $\mu$s after CZ.
 	\end{itemize}
-\item The first voltage peak is between 7.0 and 7.4 kV with a rise time of approximately 96 $\mu$s
+\item The first voltage peak is between 7.0 and 7.4 kV, with a rise time of approximately 96 $\mu$s
 \end{itemize}
 
 \begin{table}[H]
@@ -594,9 +594,9 @@ L$_s$ [mH] & L$_1$ [mH] & R$_1$ [$\Omega$] & C [nF] & R$_{d}$ [$\Omega$] & I [A]
 \label{tab:testParameters}
 \end{table}
 
-In table \ref{tab:testParameters} the value of the different test circuit parameters and the corresponding current can be observed. The test are done at currents with an RMS value of 400 A and 630 A. In all the test the TRV is kept constant up to and including the first voltage peak. In the case of a failed interruption thermal re-ignition occurs within a few microseconds after CZ.
+In table \ref{tab:testParameters}, the value of the different test circuit parameters and the corresponding current can be observed. The test is done at currents with an RMS value of 400 A and 630 A. In the entire test the TRV is kept constant up to and including the first voltage peak. In the case of a failed interruption, thermal re-ignition occurs within a few microseconds after CZ.
 
-A resistive transducer is measuring the contact position while a Hall effect current transducer is measuring the current through the test switch. The voltage between the contacts is measured with a parallel resistive / capacitive voltage divider. All measurements are transmitted through optical fibres to a 12 bit resolution transient recorder with a sampling frequency is 2.5 MHZ. The pressure in the tank is only measured before each test with an accuracy of 0.01 bar. The test switch is displayed in figure \ref{fig:testSwitchRiggEq}.
+A resistive transducer is measuring the contact position while a Hall Effect current transducer is measuring the current through the test switch. The voltage between the contacts is measured with a parallel resistive / capacitive voltage divider. All measurements are transmitted through optical fibres to a 12 bit resolution transient recorder with a sampling frequency is 2.5 MHZ. The pressure in the tank is only measured before each test with an accuracy of 0.01 bar. The test switch is displayed in figure \ref{fig:testSwitchRiggEq}.
 
 \begin{figure} [H]
 \centering
@@ -607,44 +607,44 @@ contact, 5. Connection to load circuit, 6. Spring drive mechanism, 7. Electromag
 
 \newpage
 \subsection{Procedure} \label{sec:procedure}
-Interruption tests with CZ occuring both inside and outside the nozzle are carried out. Previous work with a similar setup found that the interruption capability is better outside the nozzle. With two current ratings a total of four cases have been tested, if counting interruptions inside and outside the nozzle as the same case. The first and second CZ is included in this study to provide as much data as possible.
+Interruption tests with CZ occuring both inside and outside the nozzle are carried out. Previous work with a similar setup found that the interruption capability is better outside the nozzle. With two current ratings, a total of four cases have been tested, if counting interruptions inside and outside the nozzle as the same case. The first and second CZ is included in this study to provide as much data as possible.
 
-Inside nozzle is defined as contact position x = [5, 25] mm and outside nozzle as x = [35, 60] mm at first CZ. Interruption tests with first CZ either in the vicinity of the tulip contact (x $<$ 5 mm) or in the boundary region between inside and outside the nozzle (x = 25, 35 mm) are not included in the "interruption success rate graphs" but are presented in tables displaying raw data in appendix \ref{app:rawData}. The first CZ occurred within x $<$ 60 mm and the second CZ occurred for x $>$ 60 mm, as the contact speed during all tests was 5.5 mm/ms $\pm$ 0.5 mm/ms.
+"Inside nozzle" is defined as contact position x = [5, 25] mm and "outside nozzle" as x = [35, 60] mm at first CZ. Interruption tests with first CZ either in the vicinity of the tulip contact (x $<$ 5 mm) or in the boundary region between inside and outside the nozzle (x = 25, 35 mm) are not included in the "interruption success rate graphs" but are presented in tables displaying raw data in appendix \ref{app:rawData}. The first CZ occurred within x $<$ 60 mm and the second CZ occurred for x $>$ 60 mm, as the contact speed during all tests was 5.5 mm/ms $\pm$ 0.5 mm/ms.
 
-When testing the interrupting capabilities the test procedure for each of the four cases as follows: 
+When testing the interrupting capabilities, the test procedure for each of the four cases was as follows: 
 
 \begin{itemize}
-\item[1.] A pressure level that seems to be in the area of interest is found by performing some initial test interruptions at different pressure levels. This level is kept constant for at least five interruption tests, where all occurred outside the nozzle.
-\item[2.] If a pressure level results in less than 100\% successful interruptions, at least five new tests with a higher upstream pressure (next level) is conducted. This is repeated until at least one pressure level with five successful interruptions is found.
+\item[1.] A pressure level that seems to be in the area of interest is found by performing some initial test interruptions at different pressure levels. This level is kept constant for at least five interruption tests, where everything occurred outside the nozzle.
+\item[2.] If a pressure level results in less than 100\% successful interruptions, at least five new tests with a higher upstream pressure (next level) are conducted. This is repeated until at least one pressure level with five successful interruptions is found.
 \item[3.] Then, the pressure is stepped down until 60\% or more of the interruption attempts fail or the lowest possible pressure level is tested.
 \end{itemize}
 
 The pressure level step is 0.1 bar for all tests and at least three pressure levels are tested for each case.\newline
 
-During initial testing it was quickly discovered that the contact geometries were not able to interrupt the current when the pin was inside the nozzle. This resulted in that most of the test where conducted when the pin was outside the nozzle. Therefore at least five tests were performed on every pressure level for the pin outside the nozzle. Some tests at high pressure where performed for each geometry when the pin was inside the nozzle to confirm that it was not possible to interrupt the current for the different geometries.
+During initial testing, it was quickly discovered that the contact geometries were not able to interrupt the current when the pin was inside the nozzle. This resulted in most of the test being conducted when the pin was outside the nozzle. Therefore, at least five tests were performed on every pressure level for the pin outside the nozzle. Some tests at high pressure were performed for each geometry when the pin was inside the nozzle, to confirm that it was not possible to interrupt the current for the different geometries.
 
-The arcing voltage is measured and plotted for each test, and saved for further use if an unsuccessful interruption occurs inside the nozzle for geometry \textit{a}. Preferably pressure from 0.6 bar and up to 2.0 bar, with intervals of 0.2 bar is stored.
+The arcing voltage is measured and plotted for each test, and saved for further use if an unsuccessful interruption occurs inside the nozzle for geometry \textit{a}. Preferably pressure from 0.6 bar and up to 2.0 bar, with intervals of 0.2, bar is stored.
 
-During the experiments the durability of the contacts are going to be evaluated. When replacing a contact, pictures with a high resolution camera are taken and the number of interruptions are noted. 
+During the experiments, the durability of the contacts is going to be evaluated. When replacing a contact, pictures with a high resolution camera are taken and the number of interruptions is noted. 
 
 The pin is cleaned, polished, and greased between each test to ensure a smooth surface. The contacts and nozzle are replaced regularly to avoid contact wear and nozzle deformation. This is to ensure that the geometry is constant through the whole experiment.
 
 \subsection{Air flow considerations} \label{sec:AirFlow}
  Most of the information in section \ref{sec:AirFlow} is collected from the article \textit{"Air Flow Investigation for a Medium Voltage Load Break Switch"} by N. S. Aanensen, E. Jonsson, and M. Runde \cite{bib:AFIMVLBA}. \newline
 
-From Bernoulli's equation it can be deduced that the maximum velocity of the gas flow through is obtained from a set pressure difference, $\Delta$\textit{p}, as given in equation \eqref{eq:Bernoulli}.
+From Bernoulli's equation it can be deduced that the maximum velocity of the gas flow through the nozzle is obtained from a set pressure difference, $\Delta$\textit{p}, as given in equation \eqref{eq:Bernoulli}.
 
 \begin{equation} \label{eq:Bernoulli}
 v_{max}=\sqrt{ \frac{2 \Delta p}{\rho}}
 \end{equation}
 
-Where $\rho$ is the mass density of the fluid and the fluid is assumed to have an ideal flow without viscosity and incompressible behaviour. The velocity of the gas, $v_{max}$, will occur on the narrowest part of the geometry as indicated in figure \ref{fig:contactAndNozzle}. Since the volumetric flow rate of the gas must be constant the velocity in the other parts of the nozzle can be calculated by the relationship between volumetric flow rate \textit{Q} and $v_{max}$ which is presented in equation \eqref{eq:flowRate}.
+Where $\rho$ is the mass density of the fluid, and the fluid is assumed to have an ideal flow without viscosity and incompressible behaviour. The velocity of the gas, $v_{max}$, will occur on the narrowest part of the geometry, as indicated in figure \ref{fig:contactAndNozzle}. Since the volumetric flow rate of the gas must be constant, the velocity in the other parts of the nozzle can be calculated by the relationship between volumetric flow rate \textit{Q} and $v_{max}$, which is presented in equation \eqref{eq:flowRate}.
 
 \begin{equation} \label{eq:flowRate}
 Q=v_{\mathrm{max}} A_\mathrm{{contact}}
 \end{equation} 
 
-If table \ref{tab:contGeoPara} is consulted it indicates that the area $ A_\mathrm{{contact}}$ is smaller than both $A_\mathrm{{ring}}$ and $A_\mathrm{{nozzle}}$ for both geometries. This means that for the geometries in this experiment, $v_\mathrm{{max}}$ is always set by the area of the tulip contact and the gas velocity will be the same whenever the pin is inside or outside the nozzle. This is because the volumetric flow is constant. The velocity of the gas that flows in the nozzle is set by equation \eqref{eq:VolumetricFlow}. In figure \ref{fig:AreacontactAndNozzle} the different areas are indicated.
+If table \ref{tab:contGeoPara} is consulted, it is indicated that the area $ A_\mathrm{{contact}}$ is smaller than both $A_\mathrm{{ring}}$ and $A_\mathrm{{nozzle}}$ for both geometries. This means that for the geometries in this experiment, $v_\mathrm{{max}}$ is always set by the area of the tulip contact and the gas velocity will be the same whenever the pin is inside or outside the nozzle. This is because the volumetric flow is constant. The velocity of the gas that flows in the nozzle is set by equation \eqref{eq:VolumetricFlow}. In figure \ref{fig:AreacontactAndNozzle}, the different areas are indicated.
 \begin{equation*}
 Q=v_\mathrm{{max}} A_\mathrm{{contact}} = v_\mathrm{{nozzle}} A_\mathrm{{nozzle}}
 \end{equation*}
@@ -654,17 +654,17 @@ Q=v_\mathrm{{max}} A_\mathrm{{contact}} = v_\mathrm{{nozzle}} A_\mathrm{{nozzle}
 v_\mathrm{{nozzle}}= v_\mathrm{{max}}\frac{A_\mathrm{{contact}}}{A_\mathrm{{nozzle}} }= v_\mathrm{{max}} \left(\frac{d}{D}\right)^2
 \end{equation} 
 
-This indicates that $v_\mathrm{{nozzle}}$ is approximately the same for geometry \textit{a} and \textit{b} since the fraction $D/d$ form table \ref{tab:contGeoPara} is almost the same for both geometries. The volumetric flow rate will increase with the increasing geometry size according to A$_\mathrm{{contact}}$. For pressure differences above 0.7 bar it is expected that sonic speeds can be reached by the gas flow.
+This indicates that $v_\mathrm{{nozzle}}$ is approximately the same for geometry \textit{a} and \textit{b}, since the fraction $D/d$ form table \ref{tab:contGeoPara} is almost the same for both geometries. The volumetric flow rate will increase with the increasing geometry size according to A$_\mathrm{{contact}}$. For pressure differences above 0.7 bar, it is expected that sonic speeds can be reached by the gas flow.
 
-The deduction above is based on the assumption that the fluid is non-compressible and has an ideal flow without viscosity. This is probably not valid since turbulence, wall effects, variations in density, and temperature are likely to be present. Without regard to this, these simplifications makes it possible to analyse the air flow in the geometries to a certain extent, and might give the possibility to explain the difference in interruption capabilities when the pin is inside or outside the nozzle. The assumptions above were verified by simulations of compressible gas flow at ambient temperature which was carried out by Nina Sasaki Aanensen. These simulations confirmed that the two geometries has in fact similar air flow velocity at equal upstream pressure and that the air flow velocity is approximately equal when the pin is inside and outside the nozzle. However, the impact of the arc has not been included in these simulations. It is safe to assume that an burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate.
+The deduction above is based on the assumption that the fluid is non-compressible and has an ideal flow without viscosity. This is probably not valid since turbulence, wall effects, variations in density, and temperature are likely to be present. Without regard to this, these simplifications make it possible to analyse the air flow in the geometries to a certain extent and might give the possibility to explain the difference in interruption capabilities when the pin is inside or outside the nozzle. The assumptions above were verified by simulations of compressible gas flow at ambient temperature, which was carried out by Nina Sasaki Aanensen. These simulations confirmed that the two geometries has in fact similar air flow velocity at equal upstream pressure and that the air flow velocity is approximately equal when the pin is inside and outside the nozzle. However, the impact of the arc has not been included in these simulations. It is safe to assume that a burning arc between the contacts will have an impact on the air flow, as it heats both the air and surroundings. This has not been accounted for in the cold flow simulations and therefore these are not expected to be accurate.
 
 \cleardoublepage
 
 \section{Results}
 \subsection{Interruption tests} \label{sec:interChance}
-Originally the one of the intention with the experiments was to test if an equal air flow velocity when the pin was inside or outside the nozzle in the moment of interruption resulted in a equal probability of interruption. However this hypothesis was dismissed because the results from the initial testing indicated that the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore the test procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption test was done at the relevant pressure levels outside the nozzle as described in section \ref{sec:procedure}. The goal with the experiment is to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
+Originally, one of the intentions of the experiments was to test if an equal air flow velocity when the pin was inside or outside the nozzle in the moment of interruption resulted in an equal probability of interruption. However, this hypothesis was dismissed because the results from the initial testing indicated that the switch was unable to interrupt at all when the pin was inside the nozzle. Therefore, the test procedure was rearranged and the focus was moved to the area when the pin was outside the nozzle at the moment of interruption. At least five interruption tests were conducted at the relevant pressure levels outside the nozzle, as described in section \ref{sec:procedure}. The goal with the experiment was to compare the different geometries to each other with regards to interruption success rate compared to pressure level and current amplitude.
 
-For the interruption tests there are four outcomes, at the first CZ the interruption can succeed or a thermal re-ignition can occur. Given a thermal re-ignition in the first CZ the current can be interrupted at the second CZ or another thermal re-ignition can occur. The end result have two outcomes: success or failure. The outcomes are explained by figure \ref{fig:pilSuccessOfFail}. Besides the outcomes listed, there is a small chance of a dielectric re-ignition. However these are rare and are therefore not included. Experience has also indicated that in practical interruption cases thermal re-ignitions are the most demanding tasks for load break switches in the 24 kV 630 A class \cite{bib:AFIMVLBA}. During testing of geometry \textit{b} at 630 A two re-ignitions occurred that was in the area between thermal and dielectric re-ignition, these was counted as thermal failures.
+For the interruption tests, there are four outcomes, at the first CZ the interruption can succeed or a thermal re-ignition can occur. Given a thermal re-ignition in the first CZ, the current can be interrupted at the second CZ or another thermal re-ignition can occur. The end result has two outcomes: success or failure. The outcomes are explained by figure \ref{fig:pilSuccessOfFail}. Besides the outcomes listed, there is a small chance of a dielectric re-ignition. However, these are rare and are therefore not included. Experience has also indicated that in practical interruption cases thermal re-ignitions are the most demanding tasks for load break switches in the 24 kV 630 A class \cite{bib:AFIMVLBA}. During testing of geometry \textit{b} at 630 A, two re-ignitions occurred that was in the area between thermal and dielectric re-ignition, and these were counted as thermal failures.
 
 \begin{figure}[H]
 \centering
